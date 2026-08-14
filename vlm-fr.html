@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-Exceptional – Mesures de gestion du trafic</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .text-block {
+            flex: 1;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .image-block {
+            flex: 1;
+            text-align: right;
+        }
+
+        .image-block img {
+            width: 100%;
+            max-width: 480px;
+            border: 3px solid #b30000;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 900px) {
+            .content-wrapper {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .image-block {
+                text-align: center;
+            }
+
+            .image-block img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="img/logo.png" alt="B-Exceptional Logo">
+
+    <nav>
+        <a href="index-fr.html">Accueil</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">Services ▼</button>
+            <div class="dropdown-content">
+                <a href="vergunningen-fr.html">Autorisations</a>
+                <a href="begeleiding-fr.html">Guidage</a>
+                <a href="route-fr.html">Études de parcours</a>
+                <a href="vlm-fr.html">VLM</a>
+                <a href="signalisatie-fr.html">Signalisation</a>
+                <a href="verscheping-fr.html">Expédition</a>
+            </div>
+        </div>
+
+        <a href="regelgeving-fr.html">Réglementation</a>
+        <a href="voorwaarden-fr.html">Conditions générales</a>
+        <a href="contact-fr.html">Contact</a>
+
+        <select class="lang-select" onchange="window.location.href=this.value;">
+            <option value="vlm.html">NL</option>
+            <option value="vlm-en.html">EN</option>
+            <option value="vlm-fr.html" selected>FR</option>
+            <option value="vlm-de.html">DE</option>
+        </select>
+    </nav>
+</header>
+
+<div class="section">
+    <h2>Mesures de gestion du trafic</h2>
+
+    <div class="content-wrapper">
+        <div class="text-block">
+            <p>
+                VLM signifie <strong>Mesures de gestion du trafic</strong>. 
+                Cela peut inclure le retrait temporaire du mobilier urbain, l’organisation d’interdictions de stationner 
+                ou la pose de plaques de roulage.
+            </p>
+            <p>
+                Ces mesures contribuent à une exécution sûre et responsable du transport exceptionnel. 
+                B-Exceptional vise à décharger autant que possible le transporteur et agit comme point de contact 
+                pour les permis, l’accompagnement, les VLM et la reconnaissance de l’itinéraire.
+            </p>
+        </div>
+
+        <div class="image-block">
+            <img src="img/VLM.png" alt="Mesures de gestion du trafic">
+        </div>
+    </div>
+</div>
+
+<footer class="footer-bar">
+    Rodendijk 60-Y • 2980 Zoersel • Belgique &nbsp;|&nbsp; 
+    Wim De Wree • <a href="mailto:wim@b-exceptional.be">wim@b-exceptional.be</a> • <a href="tel:+32492485247">+32 (0) 492 48 52 47</a>
+    <br>
+    <span class="copyright">© 2026 B-Exceptional – Transport Exceptionnel</span>
+</footer>
+
+</body>
+</html>

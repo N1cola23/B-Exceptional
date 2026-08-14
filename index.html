@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>B-Exceptional – Uitzonderlijk Vervoer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/lang.js"></script>
+
+    <style>
+        /* HERO BACKGROUND */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 85vh;
+            background: url('img/background.jpg') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* OVERLAY TEKST */
+        .hero-text {
+            background: rgba(0,0,0,0.55);
+            padding: 40px 60px;
+            border-radius: 10px;
+            color: #fff;
+            text-align: center;
+            max-width: 900px;
+        }
+
+        .hero-text h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 22px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="img/logo.png" alt="B-Exceptional Logo">
+
+    <nav>
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">Diensten ▼</button>
+            <div class="dropdown-content">
+                <a href="vergunningen.html">Vergunningen</a>
+                <a href="begeleiding.html">Begeleiding</a>
+                <a href="route.html">Route-onderzoeken</a>
+                <a href="vlm.html">VLM</a>
+                <a href="signalisatie.html">Signalisatie</a> <a href="verscheping.html">Verscheping</a>
+            </div>
+        </div>
+
+        <a href="regelgeving.html">Regelgeving</a>
+        <a href="voorwaarden.html">Algemene Voorwaarden</a>
+        <a href="contact.html">Contact</a>
+
+        <select class="lang-select" onchange="window.location.href=this.value;">
+            <option value="index.html" selected>NL</option>
+            <option value="index-en.html">EN</option>
+            <option value="index-fr.html">FR</option>
+            <option value="index-de.html">DE</option>
+        </select>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-text">
+            <h2>B-Exceptional – Uitzonderlijk Vervoer</h2>
+            <p>
+                Specialist in uitzonderlijk vervoer, vergunningen,
+                begeleiding, route-onderzoeken en signalisatie.
+            </p>
+        </div>
+    </section>
+</main>
+<footer class="footer-bar">
+    Rodendijk 60-Y • 2980 Zoersel • België &nbsp;|&nbsp; 
+    Wim De Wree • <a href="mailto:wim@b-exceptional.be">wim@b-exceptional.be</a> • <a href="tel:+32492485247">0032 (0) 492 48 52 47</a>
+    <br>
+    <span class="copyright">© 2026 B-Exceptional – Uitzonderlijk Vervoer</span>
+</footer>
+</body>

@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-Exceptional – Regelgeving</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script>
+        function changeLanguage(lang) {
+            let targetPage = 'regelgeving.html';
+            if (lang === 'de') {
+                targetPage = 'regelgeving-de.html';
+            } else if (lang === 'en') {
+                targetPage = 'regelgeving-en.html';
+            } else if (lang === 'fr') {
+                targetPage = 'regelgeving-fr.html';
+            }
+            window.location.href = targetPage;
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const path = window.location.pathname;
+            const select = document.getElementById('lang-select');
+            if (!select) return;
+            
+            if (path.includes('-de.html')) {
+                select.value = 'de';
+            } else if (path.includes('-en.html')) {
+                select.value = 'en';
+            } else if (path.includes('-fr.html')) {
+                select.value = 'fr';
+            } else {
+                select.value = 'nl';
+            }
+        });
+    </script>
+
+    <style>
+        .regel-block {
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 1100px;
+            margin-bottom: 40px;
+        }
+        .regel-block h3 {
+            color: #b30000;
+            margin-top: 50px;
+            margin-bottom: 10px;
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .regel-block h3 img {
+            height: 28px;
+            width: auto;
+        }
+        .regel-block h4 {
+            color: #000;
+            margin-top: 25px;
+            margin-bottom: 5px;
+            font-size: 22px;
+        }
+        .regel-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0 25px 0;
+        }
+        .regel-table th,
+        .regel-table td {
+            border: 1px solid #ccc;
+            padding: 6px 8px;
+            text-align: left;
+        }
+        .regel-table th {
+            background: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="img/logo.png" alt="B-Exceptional Logo">
+
+    <nav>
+        <a href="index.html" id="nav-home">Home</a>
+
+        <div class="dropdown">
+            <button class="dropbtn" id="nav-services">Diensten ▼</button>
+            <div class="dropdown-content">
+                <a href="vergunningen.html" id="nav-permits">Vergunningen</a>
+                <a href="begeleiding.html" id="nav-escort">Begeleiding</a>
+                <a href="route.html" id="nav-route">Route-onderzoeken</a>
+                <a href="vlm.html" id="nav-vlm">VLM</a>
+                <a href="signalisatie.html" id="nav-sign">Signalisatie</a>
+                <a href="verscheping.html" id="nav-ship">Verscheping</a>
+            </div>
+        </div>
+
+        <a href="regelgeving.html" id="nav-reg">Regelgeving</a>
+        <a href="voorwaarden.html" id="nav-terms">Algemene Voorwaarden</a>
+        <a href="contact.html" id="nav-contact">Contact</a>
+        
+        <select id="lang-select" class="lang-select" onchange="changeLanguage(this.value)">
+            <option value="nl">NL</option>
+            <option value="en">EN</option>
+            <option value="de">DE</option>
+            <option value="fr">FR</option>
+        </select>
+    </nav>
+</header>
+
+<div class="section">
+
+    <div class="regel-block">
+
+        <!-- NEDERLAND 🇳🇱 -->
+        <h3><img src="img/flags/nl.png"> Nederland – Ontheffingen</h3>
+
+        <p>
+            Ontheffing voor ondeelbare lading nodig vanaf: 22,00 x 3,00 x 4,00 x 50.000 kg.
+        </p>
+
+        <p>
+            In Nederland wordt er onderscheid gemaakt tussen een langlopende ontheffing en een incidentele ontheffing.
+        </p>
+
+        <h4>Langlopende ontheffing</h4>
+        <p>
+            Een langlopende ontheffing kan worden aangevraagd op het kenteken van een trekker, of van een oplegger. 
+            De langlopende ontheffing is in Nederland een jaar geldig. De maximale afmetingen zijn:
+        </p>
+
+        <ul>
+            <li><strong>Trekker:</strong> 22,00 x 3,50 x 4,25 x 50.000 kg.</li>
+            <li><strong>Oplegger:</strong> 27,50 x 3,50 x 4,25 x 100.000 kg.</li>
+        </ul>
+
+        <p>
+            Voor een langlopende ontheffing geldt dat de maximale afmetingen afhankelijk zijn van de technische mogelijkheden van het voertuig.
+        </p>
+
+        <h4>Incidentele ontheffing</h4>
+        <p>
+            Wanneer een langlopende ontheffing niet toereikend is, dan kan een incidentele ontheffing worden aangevraagd. 
+            Een incidentele ontheffing is minimaal vier, en maximaal twaalf, weken geldig.
+        </p>
+
+        <h4>Begeleidingen</h4>
+        <p>
+            Als het gaat om regelgeving omtrent transportbegeleiding wordt er in Nederland een onderscheid gemaakt tussen het onderliggend wegennet en het bovenliggend wegennet.
+        </p>
+
+        <h4>Onderliggend wegennet</h4>
+        <table class="regel-table">
+            <tr><th>Lengte (m)</th><th>Breedte (m)</th><th>Massa (kg)</th><th>Aantal begeleiders</th></tr>
+            <tr><td>22,00 – 27,50</td><td>3,00 – 3,50</td><td>-</td><td>-</td></tr>
+            <tr><td>27,51 – 32,00</td><td>3,51 – 4,00</td><td>-</td><td>1</td></tr>
+            <tr><td>32,01 – 50,00</td><td>4,01 – 4,50</td><td>-</td><td>2</td></tr>
+            <tr><td>&gt; 50,01</td><td>&gt; 5,01</td><td>&gt;100.000</td><td>2</td></tr>
+        </table>
+
+        <h4>Bovenliggend wegennet</h4>
+        <table class="regel-table">
+            <tr><th>Lengte (m)</th><th>Breedte (m)</th><th>Massa (kg)</th><th>Aantal begeleiders</th></tr>
+            <tr><td>22,00 – 40,00</td><td>3,00 – 4,00</td><td>-</td><td>-</td></tr>
+            <tr><td>40,01 – 50,00</td><td>4,01 – 4,50</td><td>-</td><td>1</td></tr>
+            <tr><td>-</td><td>4,51 – 5,00</td><td>-</td><td>2</td></tr>
+            <tr><td>&gt; 50,00</td><td>&gt; 5,01</td><td>&gt;100.000</td><td>2</td></tr>
+        </table>
+
+        <h4>Zelfrijdende werktuigen</h4>
+        <p>
+            Voor zelfrijdende werktuigen, zoals mobiele kranen, geldt andere regelgeving. 
+            In dit geval is er een ontheffing benodigd indien:
+        </p>
+
+        <ul>
+            <li>Breedte &gt; 3,00 m.</li>
+            <li>Lengte &gt; 20,00 m.</li>
+            <li>Aslast &gt; 12.000 kg.</li>
+            <li>Massa &gt; 60.000 kg.</li>
+        </ul>
+
+        <p>
+            Transportbegeleiding wordt voorgeschreven indien de massa groter is dan 84.000 kg.
+        </p>
+
+        <h4>Rijtijden – Onderliggend wegennet</h4>
+        <table class="regel-table">
+            <tr><th>Lengte</th><th>Breedte</th><th>Massa</th><th>Rijtijden</th></tr>
+            <tr><td>40,01 – 50,00</td><td>-</td><td>-</td><td>10:00 – 15:00 en 20:00 – 06:00</td></tr>
+            <tr><td>&gt; 50,00</td><td>-</td><td>-</td><td>20:00 – 06:00</td></tr>
+            <tr><td>-</td><td>4,01 – 4,50</td><td>-</td><td>10:00 – 15:00 en 20:00 – 06:00</td></tr>
+            <tr><td>-</td><td>4,51 – 5,00</td><td>-</td><td>20:00 – 06:00</td></tr>
+            <tr><td>-</td><td>&gt; 5,00</td><td>-</td><td>22:00 – 06:00</td></tr>
+            <tr><td>-</td><td>-</td><td>&gt;100.000</td><td>10:00 – 15:00 en 20:00 – 06:00</td></tr>
+        </table>
+
+        <h4>Rijtijden – Bovenliggend wegennet</h4>
+        <table class="regel-table">
+            <tr><th>Lengte</th><th>Breedte</th><th>Massa</th><th>Rijtijden</th></tr>
+            <tr><td>40,01 – 50,00</td><td>-</td><td>-</td><td>10:00 – 15:00 en 20:00 – 06:00</td></tr>
+            <tr><td>&gt; 50,00</td><td>-</td><td>-</td><td>20:00 – 06:00</td></tr>
+            <tr><td>-</td><td>4,01 – 4,50</td><td>-</td><td>10:00 – 15:00 en 20:00 – 06:00</td></tr>
+            <tr><td>-</td><td>4,51 – 5,00</td><td>-</td><td>20:00 – 06:00</td></tr>
+            <tr><td>-</td><td>&gt; 5,00</td><td>-</td><td>22:00 – 06:00</td></tr>
+            <tr><td>-</td><td>-</td><td>&gt;100.000</td><td>10:00 – 15:00 en 20:00 – 06:00</td></tr>
+        </table>
+
+        <hr>
+
+        <!-- BELGIË 🇧🇪 -->
+        <h3><img src="img/flags/be.png"> België – Ontheffingen</h3>
+
+        <p>
+            Ontheffing voor ondeelbare lading nodig vanaf: 16,50 x 2,55 x 4,00 x 44.000 kg.
+        </p>
+
+        <p>
+            Motorwagen + aanhanger: 18,75 x 2,55 x 4,00 x 44.000 kg.
+        </p>
+
+        <p>
+            Voor een enkelvoudig voertuig is een ontheffing benodigd wanneer de totale lengte meer is dan twaalf meter.
+        </p>
+
+        <table class="regel-table">
+            <tr><th>Type ontheffing</th><th>Maximale afmetingen (LxBxH)</th><th>Maximale massa</th><th>Geldigheidsduur</th></tr>
+            <tr><td>Gans België</td><td>27,00 x 3,50 x 4,00</td><td>44.000 kg.</td><td>5 jaar</td></tr>
+            <tr><td>Netwerk snelwegen</td><td>30,00 x 4,25 x 4,30</td><td>44.000 kg.</td><td>1 jaar</td></tr>
+            <tr><td>Netwerk 90</td><td>30,00 x 4,25 x 4,50</td><td>90.000 kg.</td><td>1 jaar</td></tr>
+            <tr><td>Netwerk 120</td><td>35,00 x 5,00 x 4,80</td><td>120.000 kg.</td><td>4 maanden</td></tr>
+            <tr><td>Reisweg</td><td>Hieronder beschreven</td><td>Hieronder beschreven</td><td>2 maanden</td></tr>
+        </table>
+
+        <h4>Gans België</h4>
+        <p>
+            Een Gans België ontheffing kan, zoals de naam al zegt, worden gebruikt in geheel België.
+        </p>
+
+        <h4>Netwerken snelwegen</h4>
+        <p>
+            In België mogen de autosnelwegen worden bereden met een massa van maximaal 44.000 kg. 
+            en een hoogte van maximaal 4,30.
+        </p>
+
+        <h4>Netwerk 90 of 120</h4>
+        <p>
+            In België wordt gewerkt met Netwerk ontheffingen. 
+            Er zijn in België netwerkroutes bepaald die een transport met een Netwerk 90 of 120 ontheffing mag berijden. 
+            De routes lopen door heel België en dekken bijvoorbeeld de havens in Antwerpen en Zeebrugge.
+        </p>
+
+        <h4>Reisweg</h4>
+        <p>
+            Een Reisweg ontheffing kan worden aangevraagd als de transportafmetingen bovenstaande maten overschrijden, 
+            of als de eindbestemming niet binnen het netwerk valt.
+        </p>
+
+        <h4>Netwerk kranen</h4>
+        <p>
+            Behalve de bovenstaande ontheffingen kent men in België ook de Netwerk kranen ontheffing 
+            voor het vervoer van zelfrijdende werktuigen.
+        </p>
+
+        <h4>Begeleidingen</h4>
+
+        <table class="regel-table">
+            <tr><th>Lengte (m)</th><th>Breedte (m)</th><th>Hoogte (m)</th><th>Massa (kg)</th><th>Aantal begeleiders</th></tr>
+            <tr><td>16,50 – 30,00</td><td>2,56 – 3,50</td><td>4,00 – 4,80</td><td>40.000 – 90.000</td><td>Geen</td></tr>
+            <tr><td>30,01 – 35,00</td><td>3,51 – 4,50</td><td></td><td>90.000 – 180.000</td><td>1</td></tr>
+            <tr><td>35,01 – 40,00</td><td>4,51 – 5,00</td><td>&gt; 4,80</td><td>&gt; 180.000</td><td>2</td></tr>
+            <tr><td>&gt; 40,00</td><td>&gt; 5,00</td><td></td><td></td><td>3</td></tr>
+        </table>
+
+        <h4>Rijverboden</h4>
+
+        <table class="regel-table">
+            <tr><th>Lengte (m)</th><th>Breedte (m)</th><th>Massa (kg)</th><th>Rijverboden</th></tr>
+            <tr><td>27,00 – 30,00</td><td></td><td></td><td>07:00 – 09:00 en 16:00 – 18:00</td></tr>
+            <tr><td>&gt; 30,00</td><td></td><td></td><td>06:00 – 21:00</td></tr>
+            <tr>
+                <td></td>
+                <td>3,50 – 4,00</td>
+                <td></td>
+                <td>
+                    06:00 – 21:00, snelwegen met minder dan drie rijbanen in dezelfde richting.<br>
+                    07:00 – 09:00 en 16:00 – 18:00, overige wegen.
+                </td>
+            </tr>
+            <tr><td></td><td>&gt; 4,00</td><td></td><td>06:00 – 21:00</td></tr>
+            <tr><td></td><td></td><td>60.000</td><td>07:00 – 09:00 en 16:00 – 18:00</td></tr>
+        </table>
+
+        <p>
+            Op dagen voorafgaand aan een feestdag is alle exceptioneel transport verboden vanaf 16:00 tot 24:00 op de feestdag. 
+            Daarnaast is alle exceptioneel transport verboden van zaterdag 12:00 tot zondag 24:00.
+        </p>
+
+        <p>
+            Tijdens sneeuwval, regen, mist, waardoor het zicht minder is dan 200 meter, mag een exceptioneel transport niet rijden. 
+            Er geldt ook een rijverbod voor exceptioneel transporten bij ijs of sneeuw op de weg.
+        </p>
+
+        <hr>
+<!-- DUITSLAND 🇩🇪 -->
+<h3><img src="img/flags/de.png"> Duitsland – Ontheffingen</h3>
+
+<p>
+    Ontheffing voor ondeelbare lading nodig vanaf: 16,50 x 2,55 x 4,00 x 40.000 kg.
+</p>
+
+<p>
+    In het geval van een motorwagen met aanhanger geldt dat een ontheffing voor ondeelbare lading benodigd is vanaf: 
+    18,75 x 2,55 x 4,00 x 40.000 kg.
+</p>
+
+<p>
+    Als het gaat om ontheffingen wordt in Duitsland een onderscheid gemaakt op basis van paragraven.
+</p>
+
+<p>
+    Wanneer het voertuig aan de wettelijk toegestane maximum afmetingen voldoet maar de lading te lang, te hoog of te breed is, 
+    dan is in Duitsland een ontheffing benodigd volgens §46 StVZO (Straßenverkehrs-Zulassungs-Ordnung).
+</p>
+
+<p>
+    Wanneer een voertuig de toegestane maximummaten en/of -gewichten overschrijdt is zowel een ontheffing benodigd volgens 
+    §70 StVZO als een ontheffing volgens §29 en §46 StVZO.
+</p>
+
+<p>
+    Een §70 is een voertuigtoelating voor voertuigen of combinaties waarmee de wettelijke maximum afmetingen kunnen worden overschreden. 
+    De grondslag voor het verlenen van een §70 is een TÜV Gutachten. In een TÜV Gutachten staan de technische gegevens van de voertuigcombinatie. 
+    Vaak wordt een TÜV Gutachten verschaft bij de aankoop van een nieuwe oplegger, ook kunt u hiervoor terecht bij NL Exceptioneel.
+</p>
+
+<p>
+    Aan de hand van een §70 kan een ontheffing volgens §29 worden aangevraagd. 
+    Een ontheffing volgens §29 is een incidentele ontheffing die maximaal drie maanden geldig is.
+</p>
+
+<p>
+    De prijs van een Duitse ontheffing volgens §29 wordt vastgesteld op basis van zeven verschillende factoren. 
+    Niet al deze factoren zijn op voorhand vast te stellen. 
+    Voor een vrijblijvende richtprijs voor uw vergunning kunt u contact opnemen met onze ontheffingsafdeling.
+</p>
+
+<p>
+    Op het gebied van Duitse ontheffingen werken wij nauw samen met onze Duitse zusteronderneming. 
+    Op die manier kunnen we de kennis van het Duitse weggennet die aanwezig is binnen de NL Exceptioneel groep maximaal benutten. 
+    Ook als het gaat om de samenwerking met de Duitse autoriteiten is de onderlinge samenwerking van groot belang.
+</p>
+
+<h4>Begeleidingen</h4>
+
+<p>
+    In Duitsland bestaat geen gekaderde regelgeving omtrent transportbegeleiding. 
+    Of, en in welke vorm, er transportbegeleiding benodigd is, hangt af van wat er in de ontheffing wordt voorgeschreven. 
+    Deze voorschriften kunnen per deelstaat verschillen.  
+    De voorschriften zijn afhankelijk van verschillende factoren, zoals de afmetingen van het transport of eventuele wegwerkzaamheden.
+</p>
+
+<p>
+    In Duitsland kent men verschillende gradaties als het gaat om transportbegeleidingen. 
+    Zo kan in een ontheffing BF2, BF3, BF4 of Hilfepolizei worden voorgeschreven.
+</p>
+
+<p>
+    Ons zusterbedrijf in Duitsland beschikt over zowel BF2, BF3 als BF4 voertuigen en kan daarnaast HiPo (Hilfepolizei) 
+    en politiebegeleiding organiseren. 
+    Ook enkele Nederlandse NL Exceptioneel begeleiders zijn geschoold om in Duitsland te mogen begeleiden als BF2 of BF3.
+</p>
+
+<h4>Rijtijden</h4>
+
+<p>
+    In Duitsland worden rijtijden voor exceptioneel transport voorgeschreven in de ontheffing. 
+    Rijtijden kunnen verschillen per deelstaat.
+</p>
+        <!-- FRANKRIJK 🇫🇷 -->
+        <h3><img src="img/flags/fr.png"> Frankrijk – Ontheffingen</h3>
+
+        <p>
+            Ontheffing voor ondeelbare lading nodig vanaf: 16,50 x 2,55 x 4,00 x 44.000 kg.
+        </p>
+        <p>
+            In het geval van een motorwagen met aanhanger geldt dat een ontheffing voor ondeelbare lading benodigd is vanaf: 
+            18,75 x 2,55 x 4,00 x 44.000 kg.
+        </p>
+
+        <p>In Frankrijk kent men een aantal mogelijkheden als het gaat om ontheffingen. Hieronder een overzicht van de verschillende typen ontheffingen.</p>
+
+        <table class="regel-table">
+            <tr><th>Type ontheffing</th><th>Maximale afmetingen (LxBxH)</th><th>Maximum massa</th><th>Geldigheidsduur</th></tr>
+            <tr><td>CAT 1</td><td>20,00 x 3,00 x 4,50</td><td>48.000 kg.</td><td>3 jaar</td></tr>
+            <tr><td>CAT 2</td><td>25,00 x 4,00 x 4,50</td><td>48.000 kg.</td><td>2 jaar</td></tr>
+            <tr><td>CAT 2 op specifieke route</td><td>25,00 x 4,00 x 4,50</td><td>72.000 kg.</td><td>1 jaar</td></tr>
+            <tr><td>CAT 3 op specifieke route</td><td>&gt; 25,00 x 4,00 x 4,50</td><td>72.000 kg.</td><td>1 tot 6 maanden</td></tr>
+        </table>
+
+        <p>
+            Voor de standaard CAT 1 en 2 ontheffingen is een routekaart verplicht. Op deze routekaarten staan de routes behorend bij het betreffende netwerk. 
+            Een netwerkkaart kunt u bestellen bij NL Exceptioneel.
+        </p>
+
+        <p>
+            Naast een CAT vergunning is het ook mogelijk om in Frankrijk een lokale vergunning op een specifieke route aan te vragen, 
+            of een zogeheten aansluitvergunning die aansluit op het CAT 2 netwerk.
+        </p>
+
+        <h4>Begeleidingen</h4>
+
+        <p>
+            Wat betreft begeleidingen kan voor Frankrijk het onderstaande schema worden aangehouden. 
+            Indien het vak grijs gekleurd is en geen tekst bevat, dan betekent dit dat deze maatvoering niet van toepassing is.
+        </p>
+
+        <table class="regel-table">
+            <tr>
+                <th>Breedte (m)</th>
+                <th>Lengte (m)</th>
+                <th>CAT 1</th>
+                <th>CAT 2</th>
+                <th>CAT 3 ≤ 72t</th>
+                <th>CAT 3 ≤ 120t</th>
+                <th>CAT 3 > 120t</th>
+            </tr>
+
+            <tr>
+                <td>&lt; 3m00</td>
+                <td>&lt; 20m00</td>
+                <td>Geen</td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>&lt; 3m00</td>
+                <td>20m01 – 25m00</td>
+                <td></td>
+                <td>Geen</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>&lt; 3m00</td>
+                <td>25m01 – 30m00</td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>2 + Guidage</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>&lt; 3m00</td>
+                <td>30m01 – 40m00</td>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>3m01 – 4m00</td>
+                <td>&lt; 25m00</td>
+                <td></td>
+                <td>1</td>
+                <td></td>
+                <td>2</td>
+                <td>2</td>
+            </tr>
+
+            <tr>
+                <td>3m01 – 4m00</td>
+                <td>25m01 – 30m00</td>
+                <td></td>
+                <td>1</td>
+                <td>2 + Guidage</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>3m01 – 4m00</td>
+                <td>30m01 – 40m00</td>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>4m01 – 4m50</td>
+                <td>&lt; 25m00</td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>2 + Guidage</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>4m01 – 4m50</td>
+                <td>25m01 – 30m00</td>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>4m01 – 4m50</td>
+                <td>30m01 – 40m00</td>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>4m51 – 5m00</td>
+                <td>&lt; 40m00</td>
+                <td></td>
+                <td>2</td>
+                <td>2 + Guidage</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>&gt; 5m00</td>
+                <td>&gt; 40m00</td>
+                <td></td>
+                <td>2 + Guidage</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <h4>Guidage</h4>
+        <p>
+            Guidage staat voor begeleiding door particuliere begeleiders op gele motoren. 
+            Indien er geen guideurs beschikbaar zijn kan de politie het transport begeleiden. 
+            Ook kan het zijn dat er op grond van de ontheffing politiebegeleiding wordt voorgeschreven.
+        </p>
+
+        <h4>Rijtijden</h4>
+        <p>
+            Rijtijden kunnen in Frankrijk verschillen per departement en per snelweg. 
+            Voor heel Frankrijk geldt een rijverbod voor exceptionele transporten vanaf zaterdag, 
+            of de dag voorafgaande aan een feestdag, 12:00, tot en met maandag of de dag volgend op een feestdag 06:00. 
+            Bij sneeuwval, ijzel of slecht zicht is het verboden te rijden.
+        </p>
+
+        <hr>
+
+        <!-- DENEMARKEN 🇩🇰 -->
+        <h3><img src="img/flags/dk.png"> Denemarken – Ontheffingen</h3>
+
+        <p>
+            Of in Denemarken een ontheffing benodigd is hangt van de afmetingen van de lading en de technische mogelijkheden van de combinatie. Hieronder een overzicht.
+        </p>
+
+        <table class="regel-table">
+            <tr><th>Combinatie</th><th>Ontheffing benodigd vanaf</th></tr>
+            <tr><td>Trekker met standaard trailer</td><td>16,50 x 3,30 x 4,10 x 40.000 kg</td></tr>
+            <tr><td>Trekker met schuiftrailer zonder stuurassen</td><td>22,00 x 3,30 x 4,10 x 40.000 kg.</td></tr>
+            <tr><td>Trekkers met schuiftrailer met stuurassen</td><td>30,00 x 3,30 x 4,10 x 40.000 kg.</td></tr>
+            <tr><td>Truck en aanhanger</td><td>18,75 x 3,30 x 4,10 x 40.000 kg.</td></tr>
+        </table>
+
+        <h4>Begeleidingen</h4>
+        <p>
+            Wanneer een exceptioneel transport in Denemarken langer is dan 30 meter wordt transportbegeleiding voorschreven. 
+            Wat de breedte betreft geldt dat er vanaf 3,65 meter transportbegeleiding wordt voorgeschreven op het onderliggend netwerk 
+            en vanaf 4,00 meter op snelwegen.
+        </p>
+
+        <h4>Rijverboden</h4>
+        <p>
+            In Denemarken verschillen rijverboden per regio. 
+            Neem voor meer informatie over rijverboden in Denemarken contact op met onze ontheffingsafdeling.
+        </p>
+
+        <hr>
+
+        <!-- POLEN 🇵🇱 -->
+        <h3><img src="img/flags/pl.png"> Polen – Ontheffingen</h3>
+
+        <p>
+            Ontheffing voor ondeelbare lading nodig vanaf: 16,50 x 2,55 x 4,00 x 40.000 kg.
+        </p>
+        <p>
+            In het geval van een motorwagen met aanhanger geldt dat een ontheffing voor ondeelbare lading benodigd is vanaf: 
+            18,75 x 2,55 x 4,00 x 40.000 kg.
+        </p>
+
+        <table class="regel-table">
+            <tr><th>Categorie</th><th>Maximale afmetingen</th><th>Toegestane wegen</th><th>Geldigheid</th></tr>
+            <tr><td>I.</td><td>Breedte ontheffing tot 3,50 breed</td><td>Alle openbare wegen</td><td>12 maanden</td></tr>
+            <tr><td>II.</td><td>23,00 x 3,20  4,30 x 40.000 kg.</td><td>Alle openbare wegen</td><td>1, 6, 12 of 24 maanden</td></tr>
+            <tr><td>III.</td><td>Trailer zonder gestuurde assen: 23,00 x 3,40 x 4,30 x 40.000 kg.<br>Trailer met gestuurde assen: 30,00 x 3,40 x 4,30 x 40.000 kg.</td><td>Nationale wegen en snelwegen</td><td>1, 6, 12 of 24 maanden</td></tr>
+            <tr><td>IV.</td><td>Trailer zonder gestuurde assen: 23,00 x 4,00 x 4,30 x 60.000 kg.<br>Trailer met gestuurde assen: 30,00 x 4,00 x 4,30 x 60.000 kg.</td><td>Alle openbare wegen</td><td>1, 6, 12 of 24 maanden</td></tr>
+            <tr><td>V.</td><td>Indien bovenstaande niet toereikeind.</td><td>Conform ontheffing.</td><td>14 dagen (1 rit) / 30 dagen (meerdere ritten)</td></tr>
+        </table>
+
+        <h4>Begeleidingen</h4>
+
+        <table class="regel-table">
+            <tr><th>Afmetingen (LxBxH)</th><th>Maximum massa</th><th>Aantal begeleiders</th></tr>
+            <tr><td>&gt; 23,00 x 3,20 x 4,50</td><td>60.000 kg.</td><td>1</td></tr>
+            <tr><td>&gt; 30,00 x 3,60 x 4,70</td><td>80.000 kg.</td><td>2</td></tr>
+        </table>
+
+        <hr>
+
+        <!-- OOSTENRIJK 🇦🇹 -->
+        <h3><img src="img/flags/at.png"> Oostenrijk – Ontheffingen</h3>
+
+        <p>
+            Ontheffing voor ondeelbare lading nodig vanaf: 16,50 x 2,55 x 4,00 x 40.000 kg.
+        </p>
+        <p>
+            In het geval van een motorwagen met aanhanger geldt dat een ontheffing voor ondeelbare lading benodigd is vanaf: 
+            18,75 x 2,55 x 4,00 x 40.000 kg.
+        </p>
+
+        <p>
+            Jaarontheffing: De maximale afmetingen van een jaarontheffing voor Oostenrijk zijn: 
+            25,00 x 3,50 x 4,20 x 60.000 kg.
+        </p>
+
+        <p>
+            Een jaarontheffing wordt niet voor alle deelstaten afgegeven. 
+            Voor de deelstaten Tirol en Voralberg is een separate aanvraag nodig.
+        </p>
+
+        <p>
+            In een jaarontheffing is een weggennetwerk opgenomen. 
+            De jaarontheffing is uitsluitend geldig op de hierin opgenomen wegen.
+        </p>
+
+        <p>
+            Mocht het transport niet binnen de hier aangegeven maatvoering vallen, 
+            neemt u dan vrijblijvend contact op voor meer informatie over een incidentele vergunning.
+        </p>
+
+        <h4>Begeleidingen – Stufen</h4>
+
+        <ul>
+            <li>Stufe 1: Conform de eerste Stufe moet het transport worden begeleid door één transportbegeleider.</li>
+            <li>Stufe 2: Beëdigde Oostenrijkse transportbegeleider.</li>
+            <li>Stufe 3: Twee beëdigde begeleiders.</li>
+            <li>Stufe 4: Drie beëdigde begeleiders + begeleider conform Stufe 1.</li>
+        </ul>
+
+        <hr>
+
+        <!-- TSJECHIË 🇨🇿 -->
+        <h3><img src="img/flags/cz.png"> Tsjechië – Ontheffingen</h3>
+
+        <p>
+            Ontheffing voor ondeelbare lading nodig vanaf:
+        </p>
+
+        <ul>
+            <li>16,50 x 2,55 x 4,00 x 42.000 kg. met vijf assen.</li>
+            <li>16,50 x 2,55 x 4,00 x 48.000 kg. met zes assen.</li>
+        </ul>
+
+        <p>
+            In het geval van een motorwagen met aanhanger geldt dat een ontheffing voor ondeelbare lading benodigd is 
+            vanaf een lengte van 18,75 meter in combinatie met de hierboven genoemde afmetingen en as-configuraties.
+        </p>
+
+        <p>
+            Het is in Tsjechië enkel mogelijk om een incidentele ontheffing op route aan te vragen.
+        </p>
+
+        <h4>Begeleidingen</h4>
+
+        <table class="regel-table">
+            <tr><th>Afmetingen (LxBxH)</th><th>Maximum massa</th><th>Aantal begeleiders</th></tr>
+            <tr><td>Van 22,00 x 3,20 x 4,50 tot 29,50 x 3,95 x 5,50</td><td>59.999 kg.</td><td>1</td></tr>
+            <tr><td>Van 29,50 x 3,95 x 5,50 tot 39,50 x 3,95 x 5,50</td><td>99.999 kg.</td><td>2</td></tr>
+            <tr><td>&gt; 39,50 x 3,95 x 5,50</td><td>&gt; 100.000 kg.</td><td>3</td></tr>
+        </table>
+
+        <hr>
+
+        <!-- FINLAND 🇫🇮 -->
+        <h3><img src="img/flags/fi.png"> Finland – Ontheffingen</h3>
+
+        <p>
+            Ontheffing voor ondeelbare lading nodig vanaf:
+        </p>
+
+        <p>
+            Voor een trekker met oplegger is een vergunning nodig als de volgende afmetingen worden overschreden: 
+            30,00 x 4,00 x 4,40 x 48.000 kg.
+        </p>
+
+        <p>
+            Voor een truck met aanhanger geldt dat een ontheffing benodigd is als deze afmetingen worden overschreden: 
+            25,25 x 4,00 x 4,40 x 60.000 kg.
+        </p>
+        <!-- NOORWEGEN 🇳🇴 -->
+<h3><img src="img/flags/no.png"> Noorwegen – Ontheffingen</h3>
+
+<p>
+    In Noorwegen is een ontheffing benodigd als de volgende afmetingen worden overschreden: 
+    <strong>20,00 x 3,25 x 4,50 x 50t.</strong>
+</p>
+
+<p>
+    Noorwegen kent geen langlopende ontheffingen. 
+    Er worden enkel ontheffingen op route verstrekt met een geldigheid van een maand.
+</p>
+
+<h4>Begeleidingen</h4>
+
+<p>
+    Vanaf een breedte van drie meter en/of een lengte van 23,50 meter wordt in Noorwegen minimaal één begeleider voorgeschreven. 
+    Het exacte aantal begeleiders is niet op voorhand bekend en wordt door de autoriteiten bepaald bij afgifte van de ontheffing.
+</p>
+<!-- ZWEDEN 🇸🇪 -->
+<h3><img src="img/flags/se.png"> Zweden – Ontheffingen</h3>
+
+<p>
+    In Zweden is een ontheffing benodigd als een transport breder is dan 3,50 meter of hoger is dan 4,50 meter. 
+    Ook bij een lengte van minimaal 30 meter is een ontheffing benodigd. 
+    Is het transport langer dan 24 meter en wordt ook minimaal één andere wettelijk toegestane maat overschreden, 
+    ook dan is een ontheffing noodzakelijk.
+</p>
+
+<p>
+    Als het gaat om gewicht dan is een ontheffing benodigd vanaf 42.000 kg. of 48.000 kg. 
+    Indien het gaat om een vijf-assige combinatie dan is vanaf 42.000 kg. een ontheffing vereist. 
+    Bestaat een combinatie uit zes of meer assen dan is vanaf 48.000 kg. een ontheffing noodzakelijk.
+</p>
+
+<p>
+    Zweden kent geen langlopende ontheffingen. 
+    Er worden enkel ontheffingen op route verstrekt met een geldigheid van maximaal drie maanden.
+</p>
+
+<h4>Begeleidingen</h4>
+
+<p>
+    In Zweden kent men behalve de reguliere transportbegeleiding ook VTL begeleiding. 
+    VTL staat voor Vägtransportledare en kan worden gezien als vervanger van de politie. 
+    In de onderstaande tabel, met horizontaal de lengte-afmetingen en verticaal de breedtes, 
+    is weergegeven bij welke afmetingen begeleiding en/of VTL wordt voorgeschreven.
+</p>
+
+<table class="regel-table">
+    <tr>
+        <th></th>
+        <th>&lt; 30,00</th>
+        <th>30,01 – 35,00</th>
+        <th>&gt; 35,00</th>
+    </tr>
+
+    <tr>
+        <th>3,10 – 3,50</th>
+        <td>1*</td>
+        <td>1</td>
+        <td>1 en 2 VTL</td>
+    </tr>
+
+    <tr>
+        <th>3,51 – 4,50</th>
+        <td>1</td>
+        <td>2</td>
+        <td>1 en 2 VTL</td>
+    </tr>
+
+    <tr>
+        <th>&gt; 4,51</th>
+        <td>1 en 2 VTL</td>
+        <td>2 en 2 VTL</td>
+        <td>2 en 2 VTL</td>
+    </tr>
+</table>
+
+<p><em>*Enkel van toepassing buiten de snelweg.</em></p>
+
+<!-- ZWITSERLAND 🇨🇭 -->
+<h3><img src="img/flags/ch.png"> Zwitserland – Ontheffingen</h3>
+
+<p>
+    Voor een trekker met oplegger is een ontheffing nodig als de volgende afmetingen worden overschreden: 
+    16,50 x 2,55 x 4,20 x 40.000 kg.
+</p>
+
+<p>
+    Voor een truck met aanhanger geldt dat een ontheffing benodigd is als deze afmetingen worden overschreden: 
+    18,75 x 2,55 x 4,20 x 40.000 kg.
+</p>
+
+<p>
+    In Zwitserland wordt onderscheid gemaakt tussen twee typen ontheffingen, 
+    een jaarontheffing en een incidentele ontheffing. 
+    De maximale afmetingen van een jaarontheffing bedragen 30,00 x 3,00 x 4,00 x 40.000 kg.
+</p>
+
+<h4>Begeleidingen</h4>
+
+<p>
+    In Zwitserland wordt onderscheid gemaakt tussen twee private transportbegeleiding en ATB-begeleiding. 
+    In het geval van ATB-begeleiding geldt dat er in bepaald kantons politiebegeleiding wordt voorgeschreven.
+</p>
+
+<p>
+    De onderstaande tabel geeft weer wanneer er begeleiding wordt voorgeschreven. 
+    De voorgeschreven begeleiding is afhankelijk van de breedte en lengte van het transport.
+</p>
+
+<table class="regel-table">
+    <tr>
+        <th>Aard van de overschrijding</th>
+        <th>Afmetingen, inclusief lading</th>
+        <th>Private begeleiding</th>
+        <th>ATB-begeleiding, of politiebegeleiding</th>
+    </tr>
+
+    <tr>
+        <td>Breedte</td>
+        <td>3,51 – 3,80</td>
+        <td>1</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Breedte</td>
+        <td>&gt; 3,80</td>
+        <td></td>
+        <td>1</td>
+    </tr>
+
+    <tr>
+        <td>Breedte + lengte</td>
+        <td>&gt; 3,30 in combinatie met een lengte &gt; 25,00</td>
+        <td>1</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Lengte</td>
+        <td>30,00 – 35,00</td>
+        <td>1</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Lengte</td>
+        <td>&gt; 35,00</td>
+        <td></td>
+        <td>1</td>
+    </tr>
+
+    <tr>
+        <td>Lengte + breedte</td>
+        <td>&gt; 30,00 in combinatie met een breedte &gt; 3,60</td>
+        <td></td>
+        <td>1</td>
+    </tr>
+
+    <tr>
+        <td>Overhang voor</td>
+        <td>&gt; 5,00</td>
+        <td>1</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Overhang achter</td>
+        <td>&gt; 8,00</td>
+        <td>1</td>
+        <td></td>
+    </tr>
+</table>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'nl',
+        includedLanguages: 'nl,en,de,fr',
+        autoDisplay: false
+    }, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript"
+src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+
+
+</body>

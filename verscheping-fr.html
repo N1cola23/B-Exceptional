@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-Exceptional – Expédition</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .text-block {
+            flex: 1;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .image-block {
+            flex: 1;
+        }
+
+        .image-block img {
+            width: 100%;
+            max-width: 480px;
+            border: 3px solid #b30000;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 900px) {
+            .content-wrapper {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .image-block {
+                text-align: center;
+            }
+
+            .image-block img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="img/logo.png" alt="B-Exceptional Logo">
+
+    <nav>
+        <a href="index-fr.html">Accueil</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">Services ▼</button>
+            <div class="dropdown-content">
+                <a href="vergunningen-fr.html">Autorisations</a>
+                <a href="begeleiding-fr.html">Guidage</a>
+                <a href="route-fr.html">Études de parcours</a>
+                <a href="vlm-fr.html">VLM</a>
+                <a href="signalisatie-fr.html">Signalisation</a>
+                <a href="verscheping-fr.html">Expédition</a>
+            </div>
+        </div>
+
+        <a href="regelgeving-fr.html">Réglementation</a>
+        <a href="voorwaarden-fr.html">Conditions générales</a>
+        <a href="contact-fr.html">Contact</a>
+
+        <select class="lang-select" onchange="window.location.href=this.value;">
+            <option value="verscheping.html">NL</option>
+            <option value="verscheping-en.html">EN</option>
+            <option value="verscheping-fr.html" selected>FR</option>
+            <option value="verscheping-de.html">DE</option>
+        </select>
+    </nav>
+</header>
+
+<div class="section">
+    <h2>Expédition</h2>
+
+    <div class="content-wrapper">
+        <div class="image-block">
+            <img src="img/verscheping.png" alt="Expédition">
+        </div>
+
+        <div class="text-block">
+            <p>
+                B-Exceptional se concentre notamment sur la prestation de services transfrontaliers, y compris des solutions pour les transports outre-mer. 
+                Afin de décharger au maximum le transporteur, B-Exceptional a choisi d’élargir son offre de services en proposant l’organisation de l’expédition.
+            </p>
+            <p>
+                Les expéditions fréquentes incluent par exemple les traversées vers le Royaume-Uni depuis les ports des Pays-Bas, de Belgique et de France. 
+                Les expéditions vers les pays scandinaves font également partie de notre domaine d’expertise.
+            </p>
+            <p>
+                Pour ces destinations et bien d’autres, vous pouvez demander une offre sans engagement.
+            </p>
+        </div>
+    </div>
+</div>
+
+<footer class="footer-bar">
+    Rodendijk 60-Y • 2980 Zoersel • Belgique &nbsp;|&nbsp; 
+    Wim De Wree • <a href="mailto:wim@b-exceptional.be">wim@b-exceptional.be</a> • <a href="tel:+32492485247">+32 (0) 492 48 52 47</a>
+    <br>
+    <span class="copyright">© 2026 B-Exceptional – Transport Exceptionnel</span>
+</footer>
+
+</body>
+</html>

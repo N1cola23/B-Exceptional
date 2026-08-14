@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-Exceptional – Regelgeving</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script>
+        function changeLanguage(lang) {
+            let targetPage = 'regelgeving.html';
+            if (lang === 'de') {
+                targetPage = 'regelgeving-de.html';
+            } else if (lang === 'en') {
+                targetPage = 'regelgeving-en.html';
+            } else if (lang === 'fr') {
+                targetPage = 'regelgeving-fr.html';
+            }
+            window.location.href = targetPage;
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const path = window.location.pathname;
+            const select = document.getElementById('lang-select');
+            if (!select) return;
+            
+            if (path.includes('-de.html')) {
+                select.value = 'de';
+            } else if (path.includes('-en.html')) {
+                select.value = 'en';
+            } else if (path.includes('-fr.html')) {
+                select.value = 'fr';
+            } else {
+                select.value = 'nl';
+            }
+        });
+    </script>
+
+    <style>
+        .regel-block {
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 1100px;
+            margin-bottom: 40px;
+        }
+        .regel-block h3 {
+            color: #b30000;
+            margin-top: 50px;
+            margin-bottom: 10px;
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .regel-block h3 img {
+            height: 28px;
+            width: auto;
+        }
+        .regel-block h4 {
+            color: #000;
+            margin-top: 25px;
+            margin-bottom: 5px;
+            font-size: 22px;
+        }
+        .regel-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0 25px 0;
+        }
+        .regel-table th,
+        .regel-table td {
+            border: 1px solid #ccc;
+            padding: 6px 8px;
+            text-align: left;
+        }
+        .regel-table th {
+            background: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="img/logo.png" alt="B-Exceptional Logo">
+
+    <nav>
+        <a href="index.html" id="nav-home">Home</a>
+
+        <div class="dropdown">
+            <button class="dropbtn" id="nav-services">Diensten ▼</button>
+            <div class="dropdown-content">
+                <a href="vergunningen.html" id="nav-permits">Vergunningen</a>
+                <a href="begeleiding.html" id="nav-escort">Begeleiding</a>
+                <a href="route.html" id="nav-route">Route-onderzoeken</a>
+                <a href="vlm.html" id="nav-vlm">VLM</a>
+                <a href="signalisatie.html" id="nav-sign">Signalisatie</a>
+                <a href="verscheping.html" id="nav-ship">Verscheping</a>
+            </div>
+        </div>
+
+        <a href="regelgeving.html" id="nav-reg">Regelgeving</a>
+        <a href="voorwaarden.html" id="nav-terms">Algemene Voorwaarden</a>
+        <a href="contact.html" id="nav-contact">Contact</a>
+        
+        <select id="lang-select" class="lang-select" onchange="changeLanguage(this.value)">
+            <option value="nl">NL</option>
+            <option value="en">EN</option>
+            <option value="de">DE</option>
+            <option value="fr">FR</option>
+        </select>
+    </nav>
+</header>
+
+<div class="section">
+
+    <div class="regel-block">
+        <h3><img src="img/flags/nl.png"> Netherlands – Permits</h3>
+
+        <p>
+            A permit for indivisible loads is required from: 22.00 x 3.00 x 4.00 x 50,000 kg.
+        </p>
+
+        <p>
+            In the Netherlands, a distinction is made between a long-term permit and an incidental permit.
+        </p>
+
+        <h4>Long-term permit</h4>
+
+        <p>
+            A long-term permit can be applied for using the registration number of a tractor unit or trailer.
+            In the Netherlands, the long-term permit is valid for one year. The maximum dimensions are:
+        </p>
+
+        <ul>
+            <li><strong>Tractor unit:</strong> 22.00 x 3.50 x 4.25 x 50,000 kg.</li>
+            <li><strong>Trailer:</strong> 27.50 x 3.50 x 4.25 x 100,000 kg.</li>
+        </ul>
+
+        <p>
+            For a long-term permit, the maximum dimensions depend on the technical capabilities of the vehicle.
+        </p>
+
+        <h4>Incidental permit</h4>
+
+        <p>
+            If a long-term permit is not sufficient, an incidental permit can be applied for.
+            An incidental permit is valid for a minimum of four and a maximum of twelve weeks.
+        </p>
+
+        <h4>Escorts</h4>
+
+        <p>
+            With regard to transport escort regulations, the Netherlands makes a distinction between
+            the secondary road network and the main road network.
+        </p>
+
+        <h4>Secondary road network</h4>
+
+        <table class="regel-table">
+            <tr>
+                <th>Length (m)</th>
+                <th>Width (m)</th>
+                <th>Mass (kg)</th>
+                <th>Number of escorts</th>
+            </tr>
+            <tr><td>22.00 – 27.50</td><td>3.00 – 3.50</td><td>-</td><td>-</td></tr>
+            <tr><td>27.51 – 32.00</td><td>3.51 – 4.00</td><td>-</td><td>1</td></tr>
+            <tr><td>32.01 – 50.00</td><td>4.01 – 4.50</td><td>-</td><td>2</td></tr>
+            <tr><td>&gt; 50.01</td><td>&gt; 5.01</td><td>&gt;100,000</td><td>2</td></tr>
+        </table>
+
+        <h4>Main road network</h4>
+
+        <table class="regel-table">
+            <tr>
+                <th>Length (m)</th>
+                <th>Width (m)</th>
+                <th>Mass (kg)</th>
+                <th>Number of escorts</th>
+            </tr>
+            <tr><td>22.00 – 40.00</td><td>3.00 – 4.00</td><td>-</td><td>-</td></tr>
+            <tr><td>40.01 – 50.00</td><td>4.01 – 4.50</td><td>-</td><td>1</td></tr>
+            <tr><td>-</td><td>4.51 – 5.00</td><td>-</td><td>2</td></tr>
+            <tr><td>&gt; 50.00</td><td>&gt; 5.01</td><td>&gt;100,000</td><td>2</td></tr>
+        </table>
+
+        <h4>Self-propelled machinery</h4>
+
+        <p>
+            Different regulations apply to self-propelled machinery, such as mobile cranes.
+            In this case, a permit is required if:
+        </p>
+
+        <ul>
+            <li>Width &gt; 3.00 m.</li>
+            <li>Length &gt; 20.00 m.</li>
+            <li>Axle load &gt; 12,000 kg.</li>
+            <li>Mass &gt; 60,000 kg.</li>
+        </ul>
+
+        <p>
+            Transport escort is required if the mass exceeds 84,000 kg.
+        </p>
+
+        <h4>Driving times – Secondary road network</h4>
+
+        <table class="regel-table">
+            <tr><th>Length</th><th>Width</th><th>Mass</th><th>Driving times</th></tr>
+            <tr><td>40.01 – 50.00</td><td>-</td><td>-</td><td>10:00 – 15:00 and 20:00 – 06:00</td></tr>
+            <tr><td>&gt; 50.00</td><td>-</td><td>-</td><td>20:00 – 06:00</td></tr>
+            <tr><td>-</td><td>4.01 – 4.50</td><td>-</td><td>10:00 – 15:00 and 20:00 – 06:00</td></tr>
+            <tr><td>-</td><td>4.51 – 5.00</td><td>-</td><td>20:00 – 06:00</td></tr>
+            <tr><td>-</td><td>&gt; 5.00</td><td>-</td><td>22:00 – 06:00</td></tr>
+            <tr><td>-</td><td>-</td><td>&gt;100,000</td><td>10:00 – 15:00 and 20:00 – 06:00</td></tr>
+        </table>
+
+        <h4>Driving times – Main road network</h4>
+
+        <table class="regel-table">
+            <tr><th>Length</th><th>Width</th><th>Mass</th><th>Driving times</th></tr>
+            <tr><td>40.01 – 50.00</td><td>-</td><td>-</td><td>10:00 – 15:00 and 20:00 – 06:00</td></tr>
+            <tr><td>&gt; 50.00</td><td>-</td><td>-</td><td>20:00 – 06:00</td></tr>
+            <tr><td>-</td><td>4.01 – 4.50</td><td>-</td><td>10:00 – 15:00 and 20:00 – 06:00</td></tr>
+            <tr><td>-</td><td>4.51 – 5.00</td><td>-</td><td>20:00 – 06:00</td></tr>
+            <tr><td>-</td><td>&gt; 5.00</td><td>-</td><td>22:00 – 06:00</td></tr>
+            <tr><td>-</td><td>-</td><td>&gt;100,000</td><td>10:00 – 15:00 and 20:00 – 06:00</td></tr>
+        </table>
+
+        <hr>
+
+        <h3><img src="img/flags/be.png"> Belgium – Permits</h3>
+
+        <p>
+            A permit for indivisible loads is required from: 16.50 x 2.55 x 4.00 x 44,000 kg.
+        </p>
+
+        <p>
+            Motor vehicle + trailer: 18.75 x 2.55 x 4.00 x 44,000 kg.
+        </p>
+
+        <p>
+            For a single vehicle, a permit is required when the total length exceeds twelve metres.
+        </p>
+
+        <table class="regel-table">
+            <tr>
+                <th>Permit type</th>
+                <th>Maximum dimensions (LxWxH)</th>
+                <th>Maximum mass</th>
+                <th>Validity</th>
+            </tr>
+            <tr><td>Entire Belgium</td><td>27.00 x 3.50 x 4.00</td><td>44,000 kg.</td><td>5 years</td></tr>
+            <tr><td>Motorway network</td><td>30.00 x 4.25 x 4.30</td><td>44,000 kg.</td><td>1 year</td></tr>
+            <tr><td>Network 90</td><td>30.00 x 4.25 x 4.50</td><td>90,000 kg.</td><td>1 year</td></tr>
+            <tr><td>Network 120</td><td>35.00 x 5.00 x 4.80</td><td>120,000 kg.</td><td>4 months</td></tr>
+            <tr><td>Route</td><td>Described below</td><td>Described below</td><td>2 months</td></tr>
+        </table>
+
+        <h4>Entire Belgium</h4>
+
+        <p>
+            An Entire Belgium permit can, as the name suggests, be used throughout Belgium.
+        </p>
+
+        <h4>Motorway networks</h4>
+
+        <p>
+            In Belgium, motorways may be used with a maximum mass of 44,000 kg
+            and a maximum height of 4.30 m.
+        </p>
+
+        <h4>Network 90 or 120</h4>
+
+        <p>
+            Belgium works with network permits. Specific network routes have been established
+            which may be used by transport with a Network 90 or 120 permit.
+            These routes run throughout Belgium and include, for example, the ports of Antwerp and Zeebrugge.
+        </p>
+
+        <h4>Route</h4>
+
+        <p>
+            A route permit can be applied for if the transport dimensions exceed the above dimensions,
+            or if the final destination is outside the network.
+        </p>
+
+        <h4>Crane network</h4>
+
+        <p>
+            In addition to the permits mentioned above, Belgium also has a Crane Network permit
+            for the transport of self-propelled machinery.
+        </p>
+
+        <h4>Escorts</h4>
+
+        <table class="regel-table">
+            <tr>
+                <th>Length (m)</th>
+                <th>Width (m)</th>
+                <th>Height (m)</th>
+                <th>Mass (kg)</th>
+                <th>Number of escorts</th>
+            </tr>
+            <tr><td>16.50 – 30.00</td><td>2.56 – 3.50</td><td>4.00 – 4.80</td><td>40,000 – 90,000</td><td>None</td></tr>
+            <tr><td>30.01 – 35.00</td><td>3.51 – 4.50</td><td></td><td>90,000 – 180,000</td><td>1</td></tr>
+            <tr><td>35.01 – 40.00</td><td>4.51 – 5.00</td><td>&gt; 4.80</td><td>&gt; 180,000</td><td>2</td></tr>
+            <tr><td>&gt; 40.00</td><td>&gt; 5.00</td><td></td><td></td><td>3</td></tr>
+        </table>
+
+        <h4>Driving bans</h4>
+
+        <table class="regel-table">
+            <tr><th>Length (m)</th><th>Width (m)</th><th>Mass (kg)</th><th>Driving bans</th></tr>
+            <tr><td>27.00 – 30.00</td><td></td><td></td><td>07:00 – 09:00 and 16:00 – 18:00</td></tr>
+            <tr><td>&gt; 30.00</td><td></td><td></td><td>06:00 – 21:00</td></tr>
+            <tr>
+                <td></td>
+                <td>3.50 – 4.00</td>
+                <td></td>
+                <td>
+                    06:00 – 21:00, motorways with fewer than three lanes in the same direction.<br>
+                    07:00 – 09:00 and 16:00 – 18:00, other roads.
+                </td>
+            </tr>
+            <tr><td></td><td>&gt; 4.00</td><td></td><td>06:00 – 21:00</td></tr>
+            <tr><td></td><td></td><td>60,000</td><td>07:00 – 09:00 and 16:00 – 18:00</td></tr>
+        </table>
+
+        <p>
+            On days preceding a public holiday, all exceptional transport is prohibited from 16:00 until 24:00 on the public holiday.
+            In addition, all exceptional transport is prohibited from Saturday 12:00 until Sunday 24:00.
+        </p>
+
+        <p>
+            During snowfall, rain or fog, when visibility is less than 200 metres, exceptional transport may not drive.
+            Driving is also prohibited for exceptional transport when there is ice or snow on the road.
+        </p>
+
+        <hr>
+
+        <h3><img src="img/flags/de.png"> Germany – Permits</h3>
+
+        <p>
+            A permit for indivisible loads is required from: 16.50 x 2.55 x 4.00 x 40,000 kg.
+        </p>
+
+        <p>
+            For a motor vehicle with trailer, a permit for indivisible loads is required from:
+            18.75 x 2.55 x 4.00 x 40,000 kg.
+        </p>
+
+        <p>
+            In Germany, permits are distinguished according to different legal paragraphs.
+        </p>
+
+        <p>
+            If the vehicle complies with the legally permitted maximum dimensions but the load is too long,
+            too high or too wide, a permit according to §46 StVZO
+            (Straßenverkehrs-Zulassungs-Ordnung) is required.
+        </p>
+
+        <p>
+            If a vehicle exceeds the permitted maximum dimensions and/or weights,
+            both a permit according to §70 StVZO and a permit according to §29 and §46 StVZO are required.
+        </p>
+
+        <p>
+            A §70 is a vehicle approval for vehicles or combinations that may exceed the legal maximum dimensions.
+            The basis for granting a §70 is a TÜV Gutachten. A TÜV Gutachten contains the technical data of the vehicle combination.
+            A TÜV Gutachten is often provided when purchasing a new trailer. You can also obtain one through NL Exceptioneel.
+        </p>
+
+        <p>
+            Based on a §70, a permit according to §29 can be applied for.
+            A §29 permit is an incidental permit valid for a maximum of three months.
+        </p>
+
+        <p>
+            The price of a German §29 permit is determined on the basis of seven different factors.
+            Not all of these factors can be determined in advance.
+            For a non-binding indicative price for your permit, please contact our permits department.
+        </p>
+
+        <p>
+            For German permits, we work closely with our German sister company.
+            This allows us to make maximum use of the knowledge of the German road network available within the NL Exceptioneel group.
+            Cooperation with the German authorities is also very important.
+        </p>
+
+        <h4>Escorts</h4>
+
+        <p>
+            Germany has no fixed regulations regarding transport escort.
+            Whether transport escort is required, and in what form, depends on the requirements stated in the permit.
+            These requirements may differ between federal states.
+            The requirements depend on various factors, such as the dimensions of the transport or roadworks.
+        </p>
+
+        <p>
+            Germany has different levels of transport escort.
+            A permit may specify BF2, BF3, BF4 or Hilfepolizei.
+        </p>
+
+        <p>
+            Our sister company in Germany has BF2, BF3 and BF4 vehicles and can also organise HiPo
+            (Hilfepolizei) and police escorts.
+            Some Dutch NL Exceptioneel escorts are also trained to operate in Germany as BF2 or BF3.
+        </p>
+
+        <h4>Driving times</h4>
+
+        <p>
+            In Germany, driving times for exceptional transport are specified in the permit.
+            Driving times may differ between federal states.
+        </p>
+
+        <hr>
+
+        <h3><img src="img/flags/fr.png"> France – Permits</h3>
+
+        <p>
+            A permit for indivisible loads is required from: 16.50 x 2.55 x 4.00 x 44,000 kg.
+        </p>
+
+        <p>
+            For a motor vehicle with trailer, a permit for indivisible loads is required from:
+            18.75 x 2.55 x 4.00 x 44,000 kg.
+        </p>
+
+        <p>
+            France has several options when it comes to permits. Below is an overview of the different types of permits.
+        </p>
+
+        <table class="regel-table">
+            <tr>
+                <th>Permit type</th>
+                <th>Maximum dimensions (LxWxH)</th>
+                <th>Maximum mass</th>
+                <th>Validity</th>
+            </tr>
+            <tr><td>CAT 1</td><td>20.00 x 3.00 x 4.50</td><td>48,000 kg.</td><td>3 years</td></tr>
+            <tr><td>CAT 2</td><td>25.00 x 4.00 x 4.50</td><td>48,000 kg.</td><td>2 years</td></tr>
+            <tr><td>CAT 2 on specific route</td><td>25.00 x 4.00 x 4.50</td><td>72,000 kg.</td><td>1 year</td></tr>
+            <tr><td>CAT 3 on specific route</td><td>&gt; 25.00 x 4.00 x 4.50</td><td>72,000 kg.</td><td>1 to 6 months</td></tr>
+        </table>
+
+        <p>
+            For standard CAT 1 and CAT 2 permits, a route map is mandatory.
+            These route maps show the routes belonging to the relevant network.
+            A network map can be ordered from NL Exceptioneel.
+        </p>
+
+        <p>
+            In addition to a CAT permit, it is also possible to apply for a local permit
+            for a specific route in France, or a so-called connecting permit that connects to the CAT 2 network.
+        </p>
+
+        <h4>Escorts</h4>
+
+        <p>
+            For France, the following table can be used as a guideline for escorts.
+            If a cell is grey and contains no text, this means that the relevant dimensions do not apply.
+        </p>
+
+        <table class="regel-table">
+            <tr>
+                <th>Width (m)</th>
+                <th>Length (m)</th>
+                <th>CAT 1</th>
+                <th>CAT 2</th>
+                <th>CAT 3 ≤ 72t</th>
+                <th>CAT 3 ≤ 120t</th>
+                <th>CAT 3 &gt; 120t</th>
+            </tr>
+            <tr><td>&lt; 3m00</td><td>&lt; 20m00</td><td>None</td><td></td><td>1</td><td>2</td><td></td></tr>
+            <tr><td>&lt; 3m00</td><td>20m01 – 25m00</td><td></td><td>None</td><td></td><td></td><td></td></tr>
+            <tr><td>&lt; 3m00</td><td>25m01 – 30m00</td><td></td><td>1</td><td>2</td><td>2 + Guidage</td><td></td></tr>
+            <tr><td>&lt; 3m00</td><td>30m01 – 40m00</td><td>2</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>3m01 – 4m00</td><td>&lt; 25m00</td><td></td><td>1</td><td></td><td>2</td><td>2</td></tr>
+            <tr><td>3m01 – 4m00</td><td>25m01 – 30m00</td><td></td><td>1</td><td>2 + Guidage</td><td></td><td></td></tr>
+            <tr><td>3m01 – 4m00</td><td>30m01 – 40m00</td><td>2</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>4m01 – 4m50</td><td>&lt; 25m00</td><td></td><td>1</td><td>2</td><td>2 + Guidage</td><td></td></tr>
+            <tr><td>4m01 – 4m50</td><td>25m01 – 30m00</td><td>2</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>4m01 – 4m50</td><td>30m01 – 40m00</td><td>2</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>4m51 – 5m00</td><td>&lt; 40m00</td><td></td><td>2</td><td>2 + Guidage</td><td></td><td></td></tr>
+            <tr><td>&gt; 5m00</td><td>&gt; 40m00</td><td></td><td>2 + Guidage</td><td></td><td></td><td></td></tr>
+        </table>
+
+        <h4>Guidage</h4>
+
+        <p>
+            Guidage refers to escorting by private escorts on yellow motorcycles.
+            If no guideurs are available, the police may escort the transport.
+            Police escort may also be required based on the permit.
+        </p>
+
+        <h4>Driving times</h4>
+
+        <p>
+            Driving times in France may differ by department and motorway.
+            Throughout France, exceptional transport is prohibited from Saturday,
+            or the day preceding a public holiday, at 12:00 until Monday,
+            or the day following a public holiday, at 06:00.
+            Driving is prohibited during snowfall, icy conditions or poor visibility.
+        </p>
+
+        <hr>
+
+        <h3><img src="img/flags/dk.png"> Denmark – Permits</h3>
+
+        <p>
+            Whether a permit is required in Denmark depends on the dimensions of the load
+            and the technical capabilities of the combination. Below is an overview.
+        </p>
+
+        <table class="regel-table">
+            <tr><th>Combination</th><th>Permit required from</th></tr>
+            <tr><td>Tractor with standard trailer</td><td>16.50 x 3.30 x 4.10 x 40,000 kg</td></tr>
+            <tr><td>Tractor with sliding trailer without steering axles</td><td>22.00 x 3.30 x 4.10 x 40,000 kg.</td></tr>
+            <tr><td>Tractor with sliding trailer with steering axles</td><td>30.00 x 3.30 x 4.10 x 40,000 kg.</td></tr>
+            <tr><td>Truck and trailer</td><td>18.75 x 3.30 x 4.10 x 40,000 kg.</td></tr>
+        </table>
+
+        <h4>Escorts</h4>
+
+        <p>
+            When exceptional transport in Denmark exceeds 30 metres in length,
+            transport escort is required.
+            Regarding width, transport escort is required from 3.65 metres on the secondary road network
+            and from 4.00 metres on motorways.
+        </p>
+
+        <h4>Driving bans</h4>
+
+        <p>
+            Driving bans in Denmark vary by region.
+            For more information about driving bans in Denmark, please contact our permits department.
+        </p>
+
+        <hr>
+
+        <h3><img src="img/flags/pl.png"> Poland – Permits</h3>
+
+        <p>
+            A permit for indivisible loads is required from: 16.50 x 2.55 x 4.00 x 40,000 kg.
+        </p>
+
+        <p>
+            For a motor vehicle with trailer, a permit for indivisible loads is required from:
+            18.75 x 2.55 x 4.00 x 40,000 kg.
+        </p>
+
+        <table class="regel-table">
+            <tr><th>Category</th><th>Maximum dimensions</th><th>Permitted roads</th><th>Validity</th></tr>
+            <tr><td>I.</td><td>Permit width up to 3.50 m</td><td>All public roads</td><td>12 months</td></tr>
+            <tr><td>II.</td><td>23.00 x 3.20 x 4.30 x 40,000 kg.</td><td>All public roads</td><td>1, 6, 12 or 24 months</td></tr>
+            <tr><td>III.</td><td>Trailer without steering axles: 23.00 x 3.40 x 4.30 x 40,000 kg.<br>Trailer with steering axles: 30.00 x 3.40 x 4.30 x 40,000 kg.</td><td>National roads and motorways</td><td>1, 6, 12 or 24 months</td></tr>
+            <tr><td>IV.</td><td>Trailer without steering axles: 23.00 x 4.00 x 4.30 x 60,000 kg.<br>Trailer with steering axles: 30.00 x 4.00 x 4.30 x 60,000 kg.</td><td>All public roads</td><td>1, 6, 12 or 24 months</td></tr>
+            <tr><td>V.</td><td>If the above is insufficient.</td><td>According to permit.</td><td>14 days (1 trip) / 30 days (multiple trips)</td></tr>
+        </table>
+
+        <h4>Escorts</h4>
+
+        <table class="regel-table">
+            <tr><th>Dimensions (LxWxH)</th><th>Maximum mass</th><th>Number of escorts</th></tr>
+            <tr><td>&gt; 23.00 x 3.20 x 4.50</td><td>60,000 kg.</td><td>1</td></tr>
+            <tr><td>&gt; 30.00 x 3.60 x 4.70</td><td>80,000 kg.</td><td>2</td></tr>
+        </table>
+
+        <hr>
+
+        <h3><img src="img/flags/at.png"> Austria – Permits</h3>
+
+        <p>
+            A permit for indivisible loads is required from: 16.50 x 2.55 x 4.00 x 40,000 kg.
+        </p>
+
+        <p>
+            For a motor vehicle with trailer, a permit for indivisible loads is required from:
+            18.75 x 2.55 x 4.00 x 40,000 kg.
+        </p>
+
+        <p>
+            Annual permit: The maximum dimensions of an annual permit for Austria are:
+            25.00 x 3.50 x 4.20 x 60,000 kg.
+        </p>
+
+        <p>
+            An annual permit is not issued for all federal states.
+            A separate application is required for Tyrol and Vorarlberg.
+        </p>
+
+        <p>
+            An annual permit contains a road network.
+            The annual permit is only valid on the roads included in it.
+        </p>
+
+        <p>
+            If the transport does not fall within the dimensions specified here,
+            please contact us without obligation for more information about an incidental permit.
+        </p>
+
+        <h4>Escorts – Stufen</h4>
+
+        <ul>
+            <li>Stufe 1: The transport must be accompanied by one transport escort.</li>
+            <li>Stufe 2: Certified Austrian transport escort.</li>
+            <li>Stufe 3: Two certified escorts.</li>
+            <li>Stufe 4: Three certified escorts + escort according to Stufe 1.</li>
+        </ul>
+
+        <hr>
+
+        <h3><img src="img/flags/cz.png"> Czech Republic – Permits</h3>
+
+        <p>
+            A permit for indivisible loads is required from:
+        </p>
+
+        <ul>
+            <li>16.50 x 2.55 x 4.00 x 42,000 kg with five axles.</li>
+            <li>16.50 x 2.55 x 4.00 x 48,000 kg with six axles.</li>
+        </ul>
+
+        <p>
+            For a motor vehicle with trailer, a permit for indivisible loads is required
+            from a length of 18.75 metres in combination with the above dimensions and axle configurations.
+        </p>
+
+        <p>
+            In the Czech Republic, it is only possible to apply for an incidental route permit.
+        </p>
+
+        <h4>Escorts</h4>
+
+        <table class="regel-table">
+            <tr><th>Dimensions (LxWxH)</th><th>Maximum mass</th><th>Number of escorts</th></tr>
+            <tr><td>From 22.00 x 3.20 x 4.50 to 29.50 x 3.95 x 5.50</td><td>59,999 kg.</td><td>1</td></tr>
+            <tr><td>From 29.50 x 3.95 x 5.50 to 39.50 x 3.95 x 5.50</td><td>99,999 kg.</td><td>2</td></tr>
+            <tr><td>&gt; 39.50 x 3.95 x 5.50</td><td>&gt; 100,000 kg.</td><td>3</td></tr>
+        </table>
+
+        <hr>
+
+        <h3><img src="img/flags/fi.png"> Finland – Permits</h3>
+
+        <p>
+            A permit for indivisible loads is required from:
+        </p>
+
+        <p>
+            For a tractor with trailer, a permit is required if the following dimensions are exceeded:
+            30.00 x 4.00 x 4.40 x 48,000 kg.
+        </p>
+
+        <p>
+            For a truck with trailer, a permit is required if these dimensions are exceeded:
+            25.25 x 4.00 x 4.40 x 60,000 kg.
+        </p>
+
+        <h3><img src="img/flags/no.png"> Norway – Permits</h3>
+
+        <p>
+            In Norway, a permit is required if the following dimensions are exceeded:
+            <strong>20.00 x 3.25 x 4.50 x 50t.</strong>
+        </p>
+
+        <p>
+            Norway does not have long-term permits.
+            Only route permits are issued, with a validity of one month.
+        </p>
+
+        <h4>Escorts</h4>
+
+        <p>
+            From a width of three metres and/or a length of 23.50 metres,
+            at least one escort is required in Norway.
+            The exact number of escorts is not known in advance and is determined by the authorities when the permit is issued.
+        </p>
+
+        <h3><img src="img/flags/se.png"> Sweden – Permits</h3>
+
+        <p>
+            In Sweden, a permit is required if a transport is wider than 3.50 metres or higher than 4.50 metres.
+            A permit is also required for a length of at least 30 metres.
+            If the transport is longer than 24 metres and at least one other legally permitted dimension is also exceeded,
+            a permit is likewise required.
+        </p>
+
+        <p>
+            Regarding weight, a permit is required from 42,000 kg or 48,000 kg.
+            For a five-axle combination, a permit is required from 42,000 kg.
+            For combinations with six or more axles, a permit is required from 48,000 kg.
+        </p>
+
+        <p>
+            Sweden does not have long-term permits.
+            Only route permits are issued, with a validity of up to three months.
+        </p>
+
+        <h4>Escorts</h4>
+
+        <p>
+            In Sweden, in addition to regular transport escort, VTL escort is also used.
+            VTL stands for Vägtransportledare and can be considered a replacement for the police.
+            The table below shows when escort and/or VTL is required.
+        </p>
+
+        <table class="regel-table">
+            <tr>
+                <th></th>
+                <th>&lt; 30.00</th>
+                <th>30.01 – 35.00</th>
+                <th>&gt; 35.00</th>
+            </tr>
+            <tr>
+                <th>3.10 – 3.50</th>
+                <td>1*</td>
+                <td>1</td>
+                <td>1 and 2 VTL</td>
+            </tr>
+            <tr>
+                <th>3.51 – 4.50</th>
+                <td>1</td>
+                <td>2</td>
+                <td>1 and 2 VTL</td>
+            </tr>
+            <tr>
+                <th>&gt; 4.51</th>
+                <td>1 and 2 VTL</td>
+                <td>2 and 2 VTL</td>
+                <td>2 and 2 VTL</td>
+            </tr>
+        </table>
+
+        <p><em>*Only applicable outside motorways.</em></p>
+
+        <h3><img src="img/flags/ch.png"> Switzerland – Permits</h3>
+
+        <p>
+            For a tractor with trailer, a permit is required if the following dimensions are exceeded:
+            16.50 x 2.55 x 4.20 x 40,000 kg.
+        </p>
+
+        <p>
+            For a truck with trailer, a permit is required if these dimensions are exceeded:
+            18.75 x 2.55 x 4.20 x 40,000 kg.
+        </p>
+
+        <p>
+            Switzerland distinguishes between two types of permits:
+            an annual permit and an incidental permit.
+            The maximum dimensions of an annual permit are 30.00 x 3.00 x 4.00 x 40,000 kg.
+        </p>
+
+        <h4>Escorts</h4>
+
+        <p>
+            Switzerland distinguishes between private transport escort and ATB escort.
+            In the case of ATB escort, police escort may be required in certain cantons.
+        </p>
+
+        <p>
+            The table below shows when escort is required.
+            The required escort depends on the width and length of the transport.
+        </p>
+
+        <table class="regel-table">
+            <tr>
+                <th>Type of exceedance</th>
+                <th>Dimensions, including load</th>
+                <th>Private escort</th>
+                <th>ATB escort or police escort</th>
+            </tr>
+            <tr><td>Width</td><td>3.51 – 3.80</td><td>1</td><td></td></tr>
+            <tr><td>Width</td><td>&gt; 3.80</td><td></td><td>1</td></tr>
+            <tr><td>Width + length</td><td>&gt; 3.30 combined with a length &gt; 25.00</td><td>1</td><td></td></tr>
+            <tr><td>Length</td><td>30.00 – 35.00</td><td>1</td><td></td></tr>
+            <tr><td>Length</td><td>&gt; 35.00</td><td></td><td>1</td></tr>
+            <tr><td>Length + width</td><td>&gt; 30.00 combined with a width &gt; 3.60</td><td></td><td>1</td></tr>
+            <tr><td>Front overhang</td><td>&gt; 5.00</td><td>1</td><td></td></tr>
+            <tr><td>Rear overhang</td><td>&gt; 8.00</td><td>1</td><td></td></tr>
+        </table>
+
+    </div>
+</div>
+
+</body>
+</html>

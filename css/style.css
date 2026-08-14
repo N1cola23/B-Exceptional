@@ -1,0 +1,192 @@
+/* Algemene body-stijl */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #000000;
+}
+
+/* Header met wit vlak voor logo */
+header {
+    background: #ffffff;
+    border-bottom: 5px solid #b30000;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo clean */
+header img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* Navigatiebalk */
+nav {
+    background: #000000;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Links in navigatie */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Taalselectie */
+.lang-select {
+    padding: 5px 10px;
+    font-size: 16px;
+    background: #000000;
+    color: #ffd700;
+    border: 2px solid #ffd700;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Dropdown menu (aangepast om de hover-kloof te verhelpen) */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    min-width: 220px;
+    border: 2px solid #b30000;
+    z-index: 1000;
+    border-radius: 5px;
+    padding: 8px 0;
+}
+
+.dropdown-content a {
+    color: #b30000;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffd700;
+    color: #000000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Hoofdsecties */
+.section {
+    padding: 40px;
+    margin: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    border-left: 5px solid #b30000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Titels in secties */
+.section h2 {
+    color: #b30000;
+    margin-top: 0;
+}
+
+/* Layout voor pagina’s met tekst + afbeelding */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+/* Tekstblok links */
+.text-block {
+    max-width: 55%;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+/* Tekstblok rechts (bij vergunningen) */
+.text-block-right {
+    max-width: 40%;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+/* Afbeeldingsblok rechts of links */
+.image-block img {
+    max-width: 480px;
+    width: 100%;
+    border: 3px solid #b30000;
+    border-radius: 10px;
+}
+
+/* Contactpagina */
+.contact-block {
+    font-size: 22px;
+    line-height: 1.8;
+    max-width: 600px;
+}
+
+/* Zorg dat niet-actieve talen standaard verborgen zijn */
+[data-lang]:not([data-lang="nl"]) {
+    display: none;
+}
+
+/* Footer-balk onderaan */
+.footer-bar {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 16px 20px;
+    font-size: 14px;
+    line-height: 1.6;
+    border-radius: 6px;
+    max-width: 1000px;
+    margin: 40px auto 20px auto;
+}
+
+.footer-bar a {
+    color: #64b5f6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-bar a:hover {
+    text-decoration: underline;
+}
+
+.footer-bar .copyright {
+    color: #aaaaaa;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 4px;
+}

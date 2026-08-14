@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-Exceptional – Conditions générales</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .pdf-block {
+            font-size: 20px;
+            line-height: 1.8;
+            max-width: 600px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .pdf-button {
+            display: inline-block;
+            background: #b30000;
+            color: #ffffff;
+            padding: 15px 25px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .pdf-button:hover {
+            background: #000000;
+            color: #ffd700;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="img/logo.png" alt="B-Exceptional Logo">
+
+    <nav>
+        <a href="index-fr.html">Accueil</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">Services ▼</button>
+            <div class="dropdown-content">
+                <a href="vergunningen-fr.html">Autorisations</a>
+                <a href="begeleiding-fr.html">Guidage</a>
+                <a href="route-fr.html">Études de parcours</a>
+                <a href="vlm-fr.html">VLM</a>
+                <a href="signalisatie-fr.html">Signalisation</a>
+                <a href="verscheping-fr.html">Expédition</a>
+            </div>
+        </div>
+
+        <a href="regelgeving-fr.html">Réglementation</a>
+        <a href="voorwaarden-fr.html">Conditions générales</a>
+        <a href="contact-fr.html">Contact</a>
+
+        <select class="lang-select" onchange="window.location.href=this.value;">
+            <option value="voorwaarden.html">NL</option>
+            <option value="voorwaarden-en.html">EN</option>
+            <option value="voorwaarden-fr.html" selected>FR</option>
+            <option value="voorwaarden-de.html">DE</option>
+        </select>
+    </nav>
+</header>
+
+<div class="section">
+    <h2>Conditions générales</h2>
+
+    <div class="pdf-block">
+        <p>
+            Vous pouvez ouvrir nos conditions générales au format PDF ci‑dessous.
+            <br><br>
+            Cliquez sur le bouton pour afficher le document.
+        </p>
+
+        <a class="pdf-button" href="pdf/voorwaarden.pdf" target="_blank">
+            Ouvrir les conditions générales (PDF)
+        </a>
+    </div>
+</div>
+
+<footer class="footer-bar">
+    Rodendijk 60-Y • 2980 Zoersel • Belgique &nbsp;|&nbsp; 
+    Wim De Wree • <a href="mailto:wim@b-exceptional.be">wim@b-exceptional.be</a> • <a href="tel:+32492485247">+32 (0) 492 48 52 47</a>
+    <br>
+    <span class="copyright">© 2026 B-Exceptional – Transport Exceptionnel</span>
+</footer>
+
+</body>
+</html>

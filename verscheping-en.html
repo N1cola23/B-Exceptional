@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-Exceptional – Shipping</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .text-block {
+            flex: 1;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .image-block {
+            flex: 1;
+        }
+
+        .image-block img {
+            width: 100%;
+            max-width: 480px;
+            border: 3px solid #b30000;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 900px) {
+            .content-wrapper {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .image-block {
+                text-align: center;
+            }
+
+            .image-block img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="img/logo.png" alt="B-Exceptional Logo">
+
+    <nav>
+        <a href="index-en.html">Home</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">Services ▼</button>
+            <div class="dropdown-content">
+                <a href="vergunningen-en.html">Permits</a>
+                <a href="begeleiding-en.html">Escort</a>
+                <a href="route-en.html">Route analysis</a>
+                <a href="vlm-en.html">VLM</a>
+                <a href="signalisatie-en.html">Signage</a>
+                <a href="verscheping-en.html">Shipping</a>
+            </div>
+        </div>
+
+        <a href="regelgeving-en.html">Regulations</a>
+        <a href="voorwaarden-en.html">Terms & Conditions</a>
+        <a href="contact-en.html">Contact</a>
+
+        <select class="lang-select" onchange="window.location.href=this.value;">
+            <option value="verscheping.html">NL</option>
+            <option value="verscheping-en.html" selected>EN</option>
+            <option value="verscheping-fr.html">FR</option>
+            <option value="verscheping-de.html">DE</option>
+        </select>
+    </nav>
+</header>
+
+<div class="section">
+    <h2>Shipping</h2>
+
+    <div class="content-wrapper">
+        <div class="image-block">
+            <img src="img/verscheping.png" alt="Shipping">
+        </div>
+
+        <div class="text-block">
+            <p>
+                B-Exceptional focuses strongly on offering cross-border services, including solutions for overseas transport. 
+                To support transport companies as much as possible, B-Exceptional has expanded its service package to include shipping arrangements.
+            </p>
+            <p>
+                Common shipments include crossings to the United Kingdom from ports in the Netherlands, Belgium, and France. 
+                Shipments to Scandinavian countries are also familiar territory for us.
+            </p>
+            <p>
+                For these and many other destinations, you can request a non-binding quotation.
+            </p>
+        </div>
+    </div>
+</div>
+
+<footer class="footer-bar">
+    Rodendijk 60-Y • 2980 Zoersel • Belgium &nbsp;|&nbsp; 
+    Wim De Wree • <a href="mailto:wim@b-exceptional.be">wim@b-exceptional.be</a> • <a href="tel:+32492485247">+32 (0) 492 48 52 47</a>
+    <br>
+    <span class="copyright">© 2026 B-Exceptional – Exceptional Transport</span>
+</footer>
+
+</body>
+</html>

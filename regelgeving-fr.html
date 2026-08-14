@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-Exceptional – Regelgeving</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script>
+        function changeLanguage(lang) {
+            let targetPage = 'regelgeving.html';
+            if (lang === 'de') {
+                targetPage = 'regelgeving-de.html';
+            } else if (lang === 'en') {
+                targetPage = 'regelgeving-en.html';
+            } else if (lang === 'fr') {
+                targetPage = 'regelgeving-fr.html';
+            }
+            window.location.href = targetPage;
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const path = window.location.pathname;
+            const select = document.getElementById('lang-select');
+            if (!select) return;
+            
+            if (path.includes('-de.html')) {
+                select.value = 'de';
+            } else if (path.includes('-en.html')) {
+                select.value = 'en';
+            } else if (path.includes('-fr.html')) {
+                select.value = 'fr';
+            } else {
+                select.value = 'nl';
+            }
+        });
+    </script>
+
+    <style>
+        .regel-block {
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 1100px;
+            margin-bottom: 40px;
+        }
+        .regel-block h3 {
+            color: #b30000;
+            margin-top: 50px;
+            margin-bottom: 10px;
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .regel-block h3 img {
+            height: 28px;
+            width: auto;
+        }
+        .regel-block h4 {
+            color: #000;
+            margin-top: 25px;
+            margin-bottom: 5px;
+            font-size: 22px;
+        }
+        .regel-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0 25px 0;
+        }
+        .regel-table th,
+        .regel-table td {
+            border: 1px solid #ccc;
+            padding: 6px 8px;
+            text-align: left;
+        }
+        .regel-table th {
+            background: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="img/logo.png" alt="B-Exceptional Logo">
+
+    <nav>
+        <a href="index.html" id="nav-home">Home</a>
+
+        <div class="dropdown">
+            <button class="dropbtn" id="nav-services">Diensten ▼</button>
+            <div class="dropdown-content">
+                <a href="vergunningen.html" id="nav-permits">Vergunningen</a>
+                <a href="begeleiding.html" id="nav-escort">Begeleiding</a>
+                <a href="route.html" id="nav-route">Route-onderzoeken</a>
+                <a href="vlm.html" id="nav-vlm">VLM</a>
+                <a href="signalisatie.html" id="nav-sign">Signalisatie</a>
+                <a href="verscheping.html" id="nav-ship">Verscheping</a>
+            </div>
+        </div>
+
+        <a href="regelgeving.html" id="nav-reg">Regelgeving</a>
+        <a href="voorwaarden.html" id="nav-terms">Algemene Voorwaarden</a>
+        <a href="contact.html" id="nav-contact">Contact</a>
+        
+        <select id="lang-select" class="lang-select" onchange="changeLanguage(this.value)">
+            <option value="nl">NL</option>
+            <option value="en">EN</option>
+            <option value="de">DE</option>
+            <option value="fr">FR</option>
+        </select>
+    </nav>
+</header>
+
+<div class="section">
+
+    <div class="regel-block">
+
+        <!-- PAYS-BAS -->
+        <h3><img src="img/flags/nl.png"> Pays-Bas – Autorisations</h3>
+
+        <p>
+            Une autorisation pour chargement indivisible est nécessaire à partir de :
+            22,00 x 3,00 x 4,00 x 50.000 kg.
+        </p>
+
+        <p>
+            Aux Pays-Bas, on distingue une autorisation de longue durée et une autorisation occasionnelle.
+        </p>
+
+        <h4>Autorisation de longue durée</h4>
+
+        <p>
+            Une autorisation de longue durée peut être demandée sur la base de la plaque d'immatriculation
+            d'un tracteur ou d'une semi-remorque. Aux Pays-Bas, l'autorisation de longue durée est valable un an.
+            Les dimensions maximales sont :
+        </p>
+
+        <ul>
+            <li><strong>Tracteur :</strong> 22,00 x 3,50 x 4,25 x 50.000 kg.</li>
+            <li><strong>Semi-remorque :</strong> 27,50 x 3,50 x 4,25 x 100.000 kg.</li>
+        </ul>
+
+        <p>
+            Pour une autorisation de longue durée, les dimensions maximales dépendent des possibilités techniques du véhicule.
+        </p>
+
+        <h4>Autorisation occasionnelle</h4>
+
+        <p>
+            Lorsqu'une autorisation de longue durée n'est pas suffisante, une autorisation occasionnelle peut être demandée.
+            Une autorisation occasionnelle est valable au minimum quatre semaines et au maximum douze semaines.
+        </p>
+
+        <h4>Accompagnement</h4>
+
+        <p>
+            En ce qui concerne la réglementation relative à l'accompagnement des transports,
+            les Pays-Bas distinguent le réseau routier secondaire et le réseau routier principal.
+        </p>
+
+        <h4>Réseau routier secondaire</h4>
+
+        <table class="regel-table">
+            <tr>
+                <th>Longueur (m)</th>
+                <th>Largeur (m)</th>
+                <th>Masse (kg)</th>
+                <th>Nombre d'accompagnateurs</th>
+            </tr>
+            <tr><td>22,00 – 27,50</td><td>3,00 – 3,50</td><td>-</td><td>-</td></tr>
+            <tr><td>27,51 – 32,00</td><td>3,51 – 4,00</td><td>-</td><td>1</td></tr>
+            <tr><td>32,01 – 50,00</td><td>4,01 – 4,50</td><td>-</td><td>2</td></tr>
+            <tr><td>&gt; 50,01</td><td>&gt; 5,01</td><td>&gt;100.000</td><td>2</td></tr>
+        </table>
+
+        <h4>Réseau routier principal</h4>
+
+        <table class="regel-table">
+            <tr>
+                <th>Longueur (m)</th>
+                <th>Largeur (m)</th>
+                <th>Masse (kg)</th>
+                <th>Nombre d'accompagnateurs</th>
+            </tr>
+            <tr><td>22,00 – 40,00</td><td>3,00 – 4,00</td><td>-</td><td>-</td></tr>
+            <tr><td>40,01 – 50,00</td><td>4,01 – 4,50</td><td>-</td><td>1</td></tr>
+            <tr><td>-</td><td>4,51 – 5,00</td><td>-</td><td>2</td></tr>
+            <tr><td>&gt; 50,00</td><td>&gt; 5,01</td><td>&gt;100.000</td><td>2</td></tr>
+        </table>
+
+        <h4>Engins automoteurs</h4>
+
+        <p>
+            Des règles différentes s'appliquent aux engins automoteurs, tels que les grues mobiles.
+            Une autorisation est nécessaire lorsque :
+        </p>
+
+        <ul>
+            <li>Largeur &gt; 3,00 m.</li>
+            <li>Longueur &gt; 20,00 m.</li>
+            <li>Charge à l'essieu &gt; 12.000 kg.</li>
+            <li>Masse &gt; 60.000 kg.</li>
+        </ul>
+
+        <p>
+            Un accompagnement du transport est obligatoire lorsque la masse dépasse 84.000 kg.
+        </p>
+
+        <h4>Horaires de circulation – Réseau routier secondaire</h4>
+
+        <table class="regel-table">
+            <tr><th>Longueur</th><th>Largeur</th><th>Masse</th><th>Horaires</th></tr>
+            <tr><td>40,01 – 50,00</td><td>-</td><td>-</td><td>10:00 – 15:00 et 20:00 – 06:00</td></tr>
+            <tr><td>&gt; 50,00</td><td>-</td><td>-</td><td>20:00 – 06:00</td></tr>
+            <tr><td>-</td><td>4,01 – 4,50</td><td>-</td><td>10:00 – 15:00 et 20:00 – 06:00</td></tr>
+            <tr><td>-</td><td>4,51 – 5,00</td><td>-</td><td>20:00 – 06:00</td></tr>
+            <tr><td>-</td><td>&gt; 5,00</td><td>-</td><td>22:00 – 06:00</td></tr>
+            <tr><td>-</td><td>-</td><td>&gt;100.000</td><td>10:00 – 15:00 et 20:00 – 06:00</td></tr>
+        </table>
+
+        <h4>Horaires de circulation – Réseau routier principal</h4>
+
+        <table class="regel-table">
+            <tr><th>Longueur</th><th>Largeur</th><th>Masse</th><th>Horaires</th></tr>
+            <tr><td>40,01 – 50,00</td><td>-</td><td>-</td><td>10:00 – 15:00 et 20:00 – 06:00</td></tr>
+            <tr><td>&gt; 50,00</td><td>-</td><td>-</td><td>20:00 – 06:00</td></tr>
+            <tr><td>-</td><td>4,01 – 4,50</td><td>-</td><td>10:00 – 15:00 et 20:00 – 06:00</td></tr>
+            <tr><td>-</td><td>4,51 – 5,00</td><td>-</td><td>20:00 – 06:00</td></tr>
+            <tr><td>-</td><td>&gt; 5,00</td><td>-</td><td>22:00 – 06:00</td></tr>
+            <tr><td>-</td><td>-</td><td>&gt;100.000</td><td>10:00 – 15:00 et 20:00 – 06:00</td></tr>
+        </table>
+
+        <hr>
+
+        <!-- BELGIQUE -->
+        <h3><img src="img/flags/be.png"> Belgique – Autorisations</h3>
+
+        <p>
+            Une autorisation pour chargement indivisible est nécessaire à partir de :
+            16,50 x 2,55 x 4,00 x 44.000 kg.
+        </p>
+
+        <p>
+            Camion + remorque : 18,75 x 2,55 x 4,00 x 44.000 kg.
+        </p>
+
+        <p>
+            Pour un véhicule seul, une autorisation est nécessaire lorsque la longueur totale dépasse douze mètres.
+        </p>
+
+        <table class="regel-table">
+            <tr>
+                <th>Type d'autorisation</th>
+                <th>Dimensions maximales (LxlxH)</th>
+                <th>Masse maximale</th>
+                <th>Validité</th>
+            </tr>
+            <tr><td>Toute la Belgique</td><td>27,00 x 3,50 x 4,00</td><td>44.000 kg.</td><td>5 ans</td></tr>
+            <tr><td>Réseau autoroutier</td><td>30,00 x 4,25 x 4,30</td><td>44.000 kg.</td><td>1 an</td></tr>
+            <tr><td>Réseau 90</td><td>30,00 x 4,25 x 4,50</td><td>90.000 kg.</td><td>1 an</td></tr>
+            <tr><td>Réseau 120</td><td>35,00 x 5,00 x 4,80</td><td>120.000 kg.</td><td>4 mois</td></tr>
+            <tr><td>Itinéraire</td><td>Décrit ci-dessous</td><td>Décrit ci-dessous</td><td>2 mois</td></tr>
+        </table>
+
+        <h4>Toute la Belgique</h4>
+
+        <p>
+            Comme son nom l'indique, une autorisation Toute la Belgique peut être utilisée dans toute la Belgique.
+        </p>
+
+        <h4>Réseaux autoroutiers</h4>
+
+        <p>
+            En Belgique, les autoroutes peuvent être empruntées avec une masse maximale de 44.000 kg
+            et une hauteur maximale de 4,30 m.
+        </p>
+
+        <h4>Réseau 90 ou 120</h4>
+
+        <p>
+            La Belgique utilise des autorisations de réseau. Des itinéraires de réseau spécifiques ont été définis
+            sur lesquels un transport bénéficiant d'une autorisation Réseau 90 ou 120 peut circuler.
+            Ces itinéraires couvrent toute la Belgique et desservent notamment les ports d'Anvers et de Zeebruges.
+        </p>
+
+        <h4>Itinéraire</h4>
+
+        <p>
+            Une autorisation d'itinéraire peut être demandée lorsque les dimensions du transport dépassent les dimensions
+            mentionnées ci-dessus ou lorsque la destination finale ne se trouve pas dans le réseau.
+        </p>
+
+        <h4>Réseau grues</h4>
+
+        <p>
+            En plus des autorisations mentionnées ci-dessus, la Belgique dispose également d'une autorisation
+            Réseau grues pour le transport d'engins automoteurs.
+        </p>
+
+        <h4>Accompagnement</h4>
+
+        <table class="regel-table">
+            <tr>
+                <th>Longueur (m)</th>
+                <th>Largeur (m)</th>
+                <th>Hauteur (m)</th>
+                <th>Masse (kg)</th>
+                <th>Nombre d'accompagnateurs</th>
+            </tr>
+            <tr><td>16,50 – 30,00</td><td>2,56 – 3,50</td><td>4,00 – 4,80</td><td>40.000 – 90.000</td><td>Aucun</td></tr>
+            <tr><td>30,01 – 35,00</td><td>3,51 – 4,50</td><td></td><td>90.000 – 180.000</td><td>1</td></tr>
+            <tr><td>35,01 – 40,00</td><td>4,51 – 5,00</td><td>&gt; 4,80</td><td>&gt; 180.000</td><td>2</td></tr>
+            <tr><td>&gt; 40,00</td><td>&gt; 5,00</td><td></td><td></td><td>3</td></tr>
+        </table>
+
+        <h4>Interdictions de circulation</h4>
+
+        <table class="regel-table">
+            <tr><th>Longueur (m)</th><th>Largeur (m)</th><th>Masse (kg)</th><th>Interdictions</th></tr>
+            <tr><td>27,00 – 30,00</td><td></td><td></td><td>07:00 – 09:00 et 16:00 – 18:00</td></tr>
+            <tr><td>&gt; 30,00</td><td></td><td></td><td>06:00 – 21:00</td></tr>
+            <tr>
+                <td></td>
+                <td>3,50 – 4,00</td>
+                <td></td>
+                <td>
+                    06:00 – 21:00, autoroutes comportant moins de trois voies dans le même sens.<br>
+                    07:00 – 09:00 et 16:00 – 18:00, autres routes.
+                </td>
+            </tr>
+            <tr><td></td><td>&gt; 4,00</td><td></td><td>06:00 – 21:00</td></tr>
+            <tr><td></td><td></td><td>60.000</td><td>07:00 – 09:00 et 16:00 – 18:00</td></tr>
+        </table>
+
+        <p>
+            Les jours précédant un jour férié, tout transport exceptionnel est interdit de 16:00 jusqu'à
+            24:00 le jour férié. De plus, tout transport exceptionnel est interdit du samedi 12:00
+            au dimanche 24:00.
+        </p>
+
+        <p>
+            En cas de neige, de pluie ou de brouillard réduisant la visibilité à moins de 200 mètres,
+            le transport exceptionnel ne peut pas circuler. Une interdiction de circulation s'applique également
+            en cas de verglas ou de neige sur la chaussée.
+        </p>
+
+        <hr>
+
+        <!-- ALLEMAGNE -->
+        <h3><img src="img/flags/de.png"> Allemagne – Autorisations</h3>
+
+        <p>
+            Une autorisation pour chargement indivisible est nécessaire à partir de :
+            16,50 x 2,55 x 4,00 x 40.000 kg.
+        </p>
+
+        <p>
+            Dans le cas d'un camion avec remorque, une autorisation pour chargement indivisible est nécessaire à partir de :
+            18,75 x 2,55 x 4,00 x 40.000 kg.
+        </p>
+
+        <p>
+            En Allemagne, les autorisations sont distinguées selon différents paragraphes légaux.
+        </p>
+
+        <p>
+            Lorsque le véhicule respecte les dimensions maximales légalement autorisées mais que le chargement est
+            trop long, trop haut ou trop large, une autorisation est nécessaire conformément au §46 StVZO
+            (Straßenverkehrs-Zulassungs-Ordnung).
+        </p>
+
+        <p>
+            Lorsqu'un véhicule dépasse les dimensions et/ou poids maximaux autorisés, une autorisation selon
+            le §70 StVZO ainsi qu'une autorisation selon les §29 et §46 StVZO sont nécessaires.
+        </p>
+
+        <p>
+            Un §70 est une homologation pour les véhicules ou combinaisons permettant de dépasser les dimensions
+            maximales légales. La base pour l'octroi d'un §70 est un TÜV Gutachten.
+            Celui-ci contient les données techniques de la combinaison de véhicules.
+            Un TÜV Gutachten est souvent fourni lors de l'achat d'une nouvelle semi-remorque.
+            NL Exceptioneel peut également vous aider à ce sujet.
+        </p>
+
+        <p>
+            Sur la base d'un §70, une autorisation selon le §29 peut être demandée.
+            Une autorisation selon le §29 est une autorisation occasionnelle valable au maximum trois mois.
+        </p>
+
+        <p>
+            Le prix d'une autorisation allemande selon le §29 est déterminé sur la base de sept facteurs différents.
+            Tous ces facteurs ne peuvent pas être déterminés à l'avance.
+            Pour une estimation indicative sans engagement, veuillez contacter notre service des autorisations.
+        </p>
+
+        <p>
+            Pour les autorisations allemandes, nous travaillons en étroite collaboration avec notre société sœur allemande.
+            Cela nous permet d'utiliser au maximum les connaissances du réseau routier allemand disponibles au sein du
+            groupe NL Exceptioneel. La coopération avec les autorités allemandes est également très importante.
+        </p>
+
+        <h4>Accompagnement</h4>
+
+        <p>
+            L'Allemagne ne dispose pas d'une réglementation uniforme concernant l'accompagnement des transports.
+            La nécessité d'un accompagnement et sa forme dépendent des prescriptions de l'autorisation.
+            Ces prescriptions peuvent varier selon les Länder et dépendent de différents facteurs,
+            tels que les dimensions du transport ou d'éventuels travaux routiers.
+        </p>
+
+        <p>
+            L'Allemagne connaît différents niveaux d'accompagnement.
+            Une autorisation peut prescrire BF2, BF3, BF4 ou Hilfepolizei.
+        </p>
+
+        <p>
+            Notre société sœur en Allemagne dispose de véhicules BF2, BF3 et BF4 et peut également organiser
+            des accompagnements HiPo (Hilfepolizei) et policiers.
+            Certains accompagnateurs néerlandais de NL Exceptioneel sont également formés pour accompagner
+            en Allemagne en tant que BF2 ou BF3.
+        </p>
+
+        <h4>Horaires de circulation</h4>
+
+        <p>
+            En Allemagne, les horaires de circulation pour les transports exceptionnels sont prescrits dans l'autorisation.
+            Les horaires peuvent varier selon les Länder.
+        </p>
+
+        <hr>
+
+        <!-- FRANCE -->
+        <h3><img src="img/flags/fr.png"> France – Autorisations</h3>
+
+        <p>
+            Une autorisation pour chargement indivisible est nécessaire à partir de :
+            16,50 x 2,55 x 4,00 x 44.000 kg.
+        </p>
+
+        <p>
+            Dans le cas d'un camion avec remorque, une autorisation pour chargement indivisible est nécessaire à partir de :
+            18,75 x 2,55 x 4,00 x 44.000 kg.
+        </p>
+
+        <p>
+            En France, plusieurs possibilités existent en matière d'autorisations.
+            Voici un aperçu des différents types d'autorisations.
+        </p>
+
+        <table class="regel-table">
+            <tr>
+                <th>Type d'autorisation</th>
+                <th>Dimensions maximales (LxlxH)</th>
+                <th>Masse maximale</th>
+                <th>Validité</th>
+            </tr>
+            <tr><td>CAT 1</td><td>20,00 x 3,00 x 4,50</td><td>48.000 kg.</td><td>3 ans</td></tr>
+            <tr><td>CAT 2</td><td>25,00 x 4,00 x 4,50</td><td>48.000 kg.</td><td>2 ans</td></tr>
+            <tr><td>CAT 2 sur itinéraire spécifique</td><td>25,00 x 4,00 x 4,50</td><td>72.000 kg.</td><td>1 an</td></tr>
+            <tr><td>CAT 3 sur itinéraire spécifique</td><td>&gt; 25,00 x 4,00 x 4,50</td><td>72.000 kg.</td><td>1 à 6 mois</td></tr>
+        </table>
+
+        <p>
+            Une carte d'itinéraire est obligatoire pour les autorisations standard CAT 1 et CAT 2.
+            Ces cartes indiquent les itinéraires correspondant au réseau concerné.
+            Une carte du réseau peut être commandée auprès de NL Exceptioneel.
+        </p>
+
+        <p>
+            En plus d'une autorisation CAT, il est également possible de demander en France une autorisation locale
+            sur un itinéraire spécifique ou une autorisation de raccordement au réseau CAT 2.
+        </p>
+
+        <h4>Accompagnement</h4>
+
+        <p>
+            En matière d'accompagnement, le tableau suivant peut être appliqué à la France.
+            Si une case est grisée et ne contient aucun texte, cela signifie que cette dimension ne s'applique pas.
+        </p>
+
+        <table class="regel-table">
+            <tr>
+                <th>Largeur (m)</th>
+                <th>Longueur (m)</th>
+                <th>CAT 1</th>
+                <th>CAT 2</th>
+                <th>CAT 3 ≤ 72t</th>
+                <th>CAT 3 ≤ 120t</th>
+                <th>CAT 3 &gt; 120t</th>
+            </tr>
+            <tr><td>&lt; 3m00</td><td>&lt; 20m00</td><td>Aucun</td><td></td><td>1</td><td>2</td><td></td></tr>
+            <tr><td>&lt; 3m00</td><td>20m01 – 25m00</td><td></td><td>Aucun</td><td></td><td></td><td></td></tr>
+            <tr><td>&lt; 3m00</td><td>25m01 – 30m00</td><td></td><td>1</td><td>2</td><td>2 + Guidage</td><td></td></tr>
+            <tr><td>&lt; 3m00</td><td>30m01 – 40m00</td><td>2</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>3m01 – 4m00</td><td>&lt; 25m00</td><td></td><td>1</td><td></td><td>2</td><td>2</td></tr>
+            <tr><td>3m01 – 4m00</td><td>25m01 – 30m00</td><td></td><td>1</td><td>2 + Guidage</td><td></td><td></td></tr>
+            <tr><td>3m01 – 4m00</td><td>30m01 – 40m00</td><td>2</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>4m01 – 4m50</td><td>&lt; 25m00</td><td></td><td>1</td><td>2</td><td>2 + Guidage</td><td></td></tr>
+            <tr><td>4m01 – 4m50</td><td>25m01 – 30m00</td><td>2</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>4m01 – 4m50</td><td>30m01 – 40m00</td><td>2</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>4m51 – 5m00</td><td>&lt; 40m00</td><td></td><td>2</td><td>2 + Guidage</td><td></td><td></td></tr>
+            <tr><td>&gt; 5m00</td><td>&gt; 40m00</td><td></td><td>2 + Guidage</td><td></td><td></td><td></td></tr>
+        </table>
+
+        <h4>Guidage</h4>
+
+        <p>
+            Le guidage désigne l'accompagnement par des accompagnateurs privés à moto jaune.
+            Si aucun guideur n'est disponible, la police peut accompagner le transport.
+            Une escorte policière peut également être prescrite par l'autorisation.
+        </p>
+
+        <h4>Horaires de circulation</h4>
+
+        <p>
+            Les horaires de circulation peuvent varier en France selon le département et l'autoroute.
+            Dans toute la France, les transports exceptionnels sont interdits à partir du samedi,
+            ou du jour précédant un jour férié, à 12:00, jusqu'au lundi ou au jour suivant un jour férié à 06:00.
+            En cas de neige, de verglas ou de mauvaise visibilité, il est interdit de circuler.
+        </p>
+
+        <hr>
+
+        <!-- DANEMARK -->
+        <h3><img src="img/flags/dk.png"> Danemark – Autorisations</h3>
+
+        <p>
+            La nécessité d'une autorisation au Danemark dépend des dimensions du chargement et des possibilités
+            techniques de la combinaison. Voici un aperçu.
+        </p>
+
+        <table class="regel-table">
+            <tr><th>Combinaison</th><th>Autorisation requise à partir de</th></tr>
+            <tr><td>Tracteur avec remorque standard</td><td>16,50 x 3,30 x 4,10 x 40.000 kg</td></tr>
+            <tr><td>Tracteur avec semi-remorque extensible sans essieux directeurs</td><td>22,00 x 3,30 x 4,10 x 40.000 kg.</td></tr>
+            <tr><td>Tracteur avec semi-remorque extensible avec essieux directeurs</td><td>30,00 x 3,30 x 4,10 x 40.000 kg.</td></tr>
+            <tr><td>Camion et remorque</td><td>18,75 x 3,30 x 4,10 x 40.000 kg.</td></tr>
+        </table>
+
+        <h4>Accompagnement</h4>
+
+        <p>
+            Lorsqu'un transport exceptionnel au Danemark dépasse 30 mètres de longueur,
+            un accompagnement est obligatoire. En ce qui concerne la largeur, un accompagnement est obligatoire
+            à partir de 3,65 mètres sur le réseau secondaire et à partir de 4,00 mètres sur les autoroutes.
+        </p>
+
+        <h4>Interdictions de circulation</h4>
+
+        <p>
+            Les interdictions de circulation au Danemark varient selon les régions.
+            Pour plus d'informations, veuillez contacter notre service des autorisations.
+        </p>
+
+        <hr>
+
+        <!-- POLOGNE -->
+        <h3><img src="img/flags/pl.png"> Pologne – Autorisations</h3>
+
+        <p>
+            Une autorisation pour chargement indivisible est nécessaire à partir de :
+            16,50 x 2,55 x 4,00 x 40.000 kg.
+        </p>
+
+        <p>
+            Dans le cas d'un camion avec remorque, une autorisation pour chargement indivisible est nécessaire à partir de :
+            18,75 x 2,55 x 4,00 x 40.000 kg.
+        </p>
+
+        <table class="regel-table">
+            <tr>
+                <th>Catégorie</th>
+                <th>Dimensions maximales</th>
+                <th>Routes autorisées</th>
+                <th>Validité</th>
+            </tr>
+            <tr><td>I.</td><td>Autorisation de largeur jusqu'à 3,50 m</td><td>Toutes les routes publiques</td><td>12 mois</td></tr>
+            <tr><td>II.</td><td>23,00 x 3,20 x 4,30 x 40.000 kg.</td><td>Toutes les routes publiques</td><td>1, 6, 12 ou 24 mois</td></tr>
+            <tr><td>III.</td><td>Remorque sans essieux directeurs : 23,00 x 3,40 x 4,30 x 40.000 kg.<br>Remorque avec essieux directeurs : 30,00 x 3,40 x 4,30 x 40.000 kg.</td><td>Routes nationales et autoroutes</td><td>1, 6, 12 ou 24 mois</td></tr>
+            <tr><td>IV.</td><td>Remorque sans essieux directeurs : 23,00 x 4,00 x 4,30 x 60.000 kg.<br>Remorque avec essieux directeurs : 30,00 x 4,00 x 4,30 x 60.000 kg.</td><td>Toutes les routes publiques</td><td>1, 6, 12 ou 24 mois</td></tr>
+            <tr><td>V.</td><td>Si les limites ci-dessus ne sont pas suffisantes.</td><td>Conformément à l'autorisation.</td><td>14 jours (1 trajet) / 30 jours (plusieurs trajets)</td></tr>
+        </table>
+
+        <h4>Accompagnement</h4>
+
+        <table class="regel-table">
+            <tr><th>Dimensions (LxlxH)</th><th>Masse maximale</th><th>Nombre d'accompagnateurs</th></tr>
+            <tr><td>&gt; 23,00 x 3,20 x 4,50</td><td>60.000 kg.</td><td>1</td></tr>
+            <tr><td>&gt; 30,00 x 3,60 x 4,70</td><td>80.000 kg.</td><td>2</td></tr>
+        </table>
+
+        <hr>
+
+        <!-- AUTRICHE -->
+        <h3><img src="img/flags/at.png"> Autriche – Autorisations</h3>
+
+        <p>
+            Une autorisation pour chargement indivisible est nécessaire à partir de :
+            16,50 x 2,55 x 4,00 x 40.000 kg.
+        </p>
+
+        <p>
+            Dans le cas d'un camion avec remorque, une autorisation pour chargement indivisible est nécessaire à partir de :
+            18,75 x 2,55 x 4,00 x 40.000 kg.
+        </p>
+
+        <p>
+            Autorisation annuelle : les dimensions maximales sont :
+            25,00 x 3,50 x 4,20 x 60.000 kg.
+        </p>
+
+        <p>
+            Une autorisation annuelle n'est pas délivrée pour tous les Länder.
+            Une demande séparée est nécessaire pour le Tyrol et le Vorarlberg.
+        </p>
+
+        <p>
+            Une autorisation annuelle contient un réseau routier.
+            Elle est uniquement valable sur les routes qui y sont mentionnées.
+        </p>
+
+        <p>
+            Si le transport ne correspond pas aux dimensions indiquées ici,
+            veuillez nous contacter sans engagement pour plus d'informations sur une autorisation occasionnelle.
+        </p>
+
+        <h4>Accompagnement – Niveaux</h4>
+
+        <ul>
+            <li>Niveau 1 : le transport doit être accompagné par un accompagnateur de transport.</li>
+            <li>Niveau 2 : accompagnateur de transport autrichien agréé.</li>
+            <li>Niveau 3 : deux accompagnateurs agréés.</li>
+            <li>Niveau 4 : trois accompagnateurs agréés + accompagnateur conformément au niveau 1.</li>
+        </ul>
+
+        <hr>
+
+        <!-- TCHÉQUIE -->
+        <h3><img src="img/flags/cz.png"> République tchèque – Autorisations</h3>
+
+        <p>
+            Une autorisation pour chargement indivisible est nécessaire à partir de :
+        </p>
+
+        <ul>
+            <li>16,50 x 2,55 x 4,00 x 42.000 kg avec cinq essieux.</li>
+            <li>16,50 x 2,55 x 4,00 x 48.000 kg avec six essieux.</li>
+        </ul>
+
+        <p>
+            Dans le cas d'un camion avec remorque, une autorisation pour chargement indivisible est nécessaire
+            à partir d'une longueur de 18,75 mètres, en combinaison avec les dimensions et configurations
+            d'essieux mentionnées ci-dessus.
+        </p>
+
+        <p>
+            En République tchèque, il est uniquement possible de demander une autorisation occasionnelle sur itinéraire.
+        </p>
+
+        <h4>Accompagnement</h4>
+
+        <table class="regel-table">
+            <tr><th>Dimensions (LxlxH)</th><th>Masse maximale</th><th>Nombre d'accompagnateurs</th></tr>
+            <tr><td>De 22,00 x 3,20 x 4,50 à 29,50 x 3,95 x 5,50</td><td>59.999 kg.</td><td>1</td></tr>
+            <tr><td>De 29,50 x 3,95 x 5,50 à 39,50 x 3,95 x 5,50</td><td>99.999 kg.</td><td>2</td></tr>
+            <tr><td>&gt; 39,50 x 3,95 x 5,50</td><td>&gt; 100.000 kg.</td><td>3</td></tr>
+        </table>
+
+        <hr>
+
+        <!-- FINLANDE -->
+        <h3><img src="img/flags/fi.png"> Finlande – Autorisations</h3>
+
+        <p>
+            Une autorisation pour chargement indivisible est nécessaire à partir de :
+        </p>
+
+        <p>
+            Pour un tracteur avec semi-remorque, une autorisation est nécessaire si les dimensions suivantes sont dépassées :
+            30,00 x 4,00 x 4,40 x 48.000 kg.
+        </p>
+
+        <p>
+            Pour un camion avec remorque, une autorisation est nécessaire si les dimensions suivantes sont dépassées :
+            25,25 x 4,00 x 4,40 x 60.000 kg.
+        </p>
+
+        <!-- NORVÈGE -->
+        <h3><img src="img/flags/no.png"> Norvège – Autorisations</h3>
+
+        <p>
+            En Norvège, une autorisation est nécessaire lorsque les dimensions suivantes sont dépassées :
+            <strong>20,00 x 3,25 x 4,50 x 50t.</strong>
+        </p>
+
+        <p>
+            La Norvège ne connaît pas d'autorisations de longue durée.
+            Seules des autorisations sur itinéraire sont délivrées, avec une validité d'un mois.
+        </p>
+
+        <h4>Accompagnement</h4>
+
+        <p>
+            À partir d'une largeur de trois mètres et/ou d'une longueur de 23,50 mètres,
+            au moins un accompagnateur est obligatoire en Norvège.
+            Le nombre exact d'accompagnateurs n'est pas connu à l'avance et est déterminé par les autorités
+            lors de la délivrance de l'autorisation.
+        </p>
+
+        <!-- SUÈDE -->
+        <h3><img src="img/flags/se.png"> Suède – Autorisations</h3>
+
+        <p>
+            En Suède, une autorisation est nécessaire lorsque le transport dépasse 3,50 mètres de largeur
+            ou 4,50 mètres de hauteur. Une autorisation est également nécessaire à partir d'une longueur de 30 mètres.
+            Si le transport dépasse 24 mètres et qu'au moins une autre dimension légalement autorisée est également dépassée,
+            une autorisation est également nécessaire.
+        </p>
+
+        <p>
+            En matière de poids, une autorisation est nécessaire à partir de 42.000 kg ou 48.000 kg.
+            Pour une combinaison à cinq essieux, une autorisation est nécessaire à partir de 42.000 kg.
+            Si la combinaison comporte six essieux ou plus, une autorisation est nécessaire à partir de 48.000 kg.
+        </p>
+
+        <p>
+            La Suède ne connaît pas d'autorisations de longue durée.
+            Seules des autorisations sur itinéraire sont délivrées, avec une validité maximale de trois mois.
+        </p>
+
+        <h4>Accompagnement</h4>
+
+        <p>
+            En Suède, outre l'accompagnement classique, il existe également l'accompagnement VTL.
+            VTL signifie Vägtransportledare et peut être considéré comme un substitut de la police.
+            Le tableau ci-dessous indique les dimensions pour lesquelles un accompagnement et/ou un VTL est prescrit.
+        </p>
+
+        <table class="regel-table">
+            <tr>
+                <th></th>
+                <th>&lt; 30,00</th>
+                <th>30,01 – 35,00</th>
+                <th>&gt; 35,00</th>
+            </tr>
+            <tr>
+                <th>3,10 – 3,50</th>
+                <td>1*</td>
+                <td>1</td>
+                <td>1 et 2 VTL</td>
+            </tr>
+            <tr>
+                <th>3,51 – 4,50</th>
+                <td>1</td>
+                <td>2</td>
+                <td>1 et 2 VTL</td>
+            </tr>
+            <tr>
+                <th>&gt; 4,51</th>
+                <td>1 et 2 VTL</td>
+                <td>2 et 2 VTL</td>
+                <td>2 et 2 VTL</td>
+            </tr>
+        </table>
+
+        <p><em>*Uniquement applicable en dehors des autoroutes.</em></p>
+
+        <!-- SUISSE -->
+        <h3><img src="img/flags/ch.png"> Suisse – Autorisations</h3>
+
+        <p>
+            Pour un tracteur avec semi-remorque, une autorisation est nécessaire si les dimensions suivantes sont dépassées :
+            16,50 x 2,55 x 4,20 x 40.000 kg.
+        </p>
+
+        <p>
+            Pour un camion avec remorque, une autorisation est nécessaire si les dimensions suivantes sont dépassées :
+            18,75 x 2,55 x 4,20 x 40.000 kg.
+        </p>
+
+        <p>
+            En Suisse, on distingue deux types d'autorisations : une autorisation annuelle et une autorisation occasionnelle.
+            Les dimensions maximales d'une autorisation annuelle sont de 30,00 x 3,00 x 4,00 x 40.000 kg.
+        </p>
+
+        <h4>Accompagnement</h4>
+
+        <p>
+            En Suisse, on distingue l'accompagnement privé et l'accompagnement ATB.
+            Dans le cas d'un accompagnement ATB, une escorte policière peut être prescrite dans certains cantons.
+        </p>
+
+        <p>
+            Le tableau ci-dessous indique quand un accompagnement est obligatoire.
+            L'accompagnement requis dépend de la largeur et de la longueur du transport.
+        </p>
+
+        <table class="regel-table">
+            <tr>
+                <th>Nature du dépassement</th>
+                <th>Dimensions, chargement compris</th>
+                <th>Accompagnement privé</th>
+                <th>Accompagnement ATB ou escorte policière</th>
+            </tr>
+            <tr><td>Largeur</td><td>3,51 – 3,80</td><td>1</td><td></td></tr>
+            <tr><td>Largeur</td><td>&gt; 3,80</td><td></td><td>1</td></tr>
+            <tr><td>Largeur + longueur</td><td>&gt; 3,30 en combinaison avec une longueur &gt; 25,00</td><td>1</td><td></td></tr>
+            <tr><td>Longueur</td><td>30,00 – 35,00</td><td>1</td><td></td></tr>
+            <tr><td>Longueur</td><td>&gt; 35,00</td><td></td><td>1</td></tr>
+            <tr><td>Longueur + largeur</td><td>&gt; 30,00 en combinaison avec une largeur &gt; 3,60</td><td></td><td>1</td></tr>
+            <tr><td>Porte-à-faux avant</td><td>&gt; 5,00</td><td>1</td><td></td></tr>
+            <tr><td>Porte-à-faux arrière</td><td>&gt; 8,00</td><td>1</td><td></td></tr>
+        </table>
+
+    </div>
+</div>
+
+</body>
+</html>

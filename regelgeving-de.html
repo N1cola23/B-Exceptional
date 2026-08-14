@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-Exceptional – Regelgeving</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script>
+        function changeLanguage(lang) {
+            let targetPage = 'regelgeving.html';
+            if (lang === 'de') {
+                targetPage = 'regelgeving-de.html';
+            } else if (lang === 'en') {
+                targetPage = 'regelgeving-en.html';
+            } else if (lang === 'fr') {
+                targetPage = 'regelgeving-fr.html';
+            }
+            window.location.href = targetPage;
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const path = window.location.pathname;
+            const select = document.getElementById('lang-select');
+            if (!select) return;
+            
+            if (path.includes('-de.html')) {
+                select.value = 'de';
+            } else if (path.includes('-en.html')) {
+                select.value = 'en';
+            } else if (path.includes('-fr.html')) {
+                select.value = 'fr';
+            } else {
+                select.value = 'nl';
+            }
+        });
+    </script>
+
+    <style>
+        .regel-block {
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 1100px;
+            margin-bottom: 40px;
+        }
+        .regel-block h3 {
+            color: #b30000;
+            margin-top: 50px;
+            margin-bottom: 10px;
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .regel-block h3 img {
+            height: 28px;
+            width: auto;
+        }
+        .regel-block h4 {
+            color: #000;
+            margin-top: 25px;
+            margin-bottom: 5px;
+            font-size: 22px;
+        }
+        .regel-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0 25px 0;
+        }
+        .regel-table th,
+        .regel-table td {
+            border: 1px solid #ccc;
+            padding: 6px 8px;
+            text-align: left;
+        }
+        .regel-table th {
+            background: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="img/logo.png" alt="B-Exceptional Logo">
+
+    <nav>
+        <a href="index.html" id="nav-home">Home</a>
+
+        <div class="dropdown">
+            <button class="dropbtn" id="nav-services">Diensten ▼</button>
+            <div class="dropdown-content">
+                <a href="vergunningen.html" id="nav-permits">Vergunningen</a>
+                <a href="begeleiding.html" id="nav-escort">Begeleiding</a>
+                <a href="route.html" id="nav-route">Route-onderzoeken</a>
+                <a href="vlm.html" id="nav-vlm">VLM</a>
+                <a href="signalisatie.html" id="nav-sign">Signalisatie</a>
+                <a href="verscheping.html" id="nav-ship">Verscheping</a>
+            </div>
+        </div>
+
+        <a href="regelgeving.html" id="nav-reg">Regelgeving</a>
+        <a href="voorwaarden.html" id="nav-terms">Algemene Voorwaarden</a>
+        <a href="contact.html" id="nav-contact">Contact</a>
+        
+        <select id="lang-select" class="lang-select" onchange="changeLanguage(this.value)">
+            <option value="nl">NL</option>
+            <option value="en">EN</option>
+            <option value="de">DE</option>
+            <option value="fr">FR</option>
+        </select>
+    </nav>
+</header>
+
+<div class="section">
+    <h2>Regelgeving per land</h2>
+
+    <div class="regel-block">
+
+        <!-- NIEDERLANDE -->
+        <h3><img src="img/flags/nl.png"> Niederlande – Genehmigungen</h3>
+
+        <p>
+            Eine Genehmigung für unteilbare Ladungen ist erforderlich ab:
+            22,00 x 3,00 x 4,00 x 50.000 kg.
+        </p>
+
+        <p>
+            In den Niederlanden wird zwischen einer Dauergenehmigung und einer Einzelgenehmigung unterschieden.
+        </p>
+
+        <h4>Dauergenehmigung</h4>
+
+        <p>
+            Eine Dauergenehmigung kann auf das Kennzeichen einer Zugmaschine oder eines Aufliegers beantragt werden.
+            Die Dauergenehmigung ist in den Niederlanden ein Jahr gültig. Die maximalen Abmessungen sind:
+        </p>
+
+        <ul>
+            <li><strong>Zugmaschine:</strong> 22,00 x 3,50 x 4,25 x 50.000 kg.</li>
+            <li><strong>Auflieger:</strong> 27,50 x 3,50 x 4,25 x 100.000 kg.</li>
+        </ul>
+
+        <p>
+            Bei einer Dauergenehmigung hängen die maximalen Abmessungen von den technischen Möglichkeiten des Fahrzeugs ab.
+        </p>
+
+        <h4>Einzelgenehmigung</h4>
+
+        <p>
+            Wenn eine Dauergenehmigung nicht ausreicht, kann eine Einzelgenehmigung beantragt werden.
+            Eine Einzelgenehmigung ist mindestens vier und höchstens zwölf Wochen gültig.
+        </p>
+
+        <h4>Begleitung</h4>
+
+        <p>
+            Bei den Vorschriften für Transportbegleitungen wird in den Niederlanden zwischen dem nachgeordneten
+            und dem übergeordneten Straßennetz unterschieden.
+        </p>
+
+        <h4>Nachgeordnetes Straßennetz</h4>
+
+        <table class="regel-table">
+            <tr>
+                <th>Länge (m)</th>
+                <th>Breite (m)</th>
+                <th>Masse (kg)</th>
+                <th>Anzahl der Begleiter</th>
+            </tr>
+            <tr><td>22,00 – 27,50</td><td>3,00 – 3,50</td><td>-</td><td>-</td></tr>
+            <tr><td>27,51 – 32,00</td><td>3,51 – 4,00</td><td>-</td><td>1</td></tr>
+            <tr><td>32,01 – 50,00</td><td>4,01 – 4,50</td><td>-</td><td>2</td></tr>
+            <tr><td>&gt; 50,01</td><td>&gt; 5,01</td><td>&gt;100.000</td><td>2</td></tr>
+        </table>
+
+        <h4>Übergeordnetes Straßennetz</h4>
+
+        <table class="regel-table">
+            <tr>
+                <th>Länge (m)</th>
+                <th>Breite (m)</th>
+                <th>Masse (kg)</th>
+                <th>Anzahl der Begleiter</th>
+            </tr>
+            <tr><td>22,00 – 40,00</td><td>3,00 – 4,00</td><td>-</td><td>-</td></tr>
+            <tr><td>40,01 – 50,00</td><td>4,01 – 4,50</td><td>-</td><td>1</td></tr>
+            <tr><td>-</td><td>4,51 – 5,00</td><td>-</td><td>2</td></tr>
+            <tr><td>&gt; 50,00</td><td>&gt; 5,01</td><td>&gt;100.000</td><td>2</td></tr>
+        </table>
+
+        <h4>Selbstfahrende Arbeitsmaschinen</h4>
+
+        <p>
+            Für selbstfahrende Arbeitsmaschinen, wie zum Beispiel Mobilkrane, gelten andere Vorschriften.
+            Eine Genehmigung ist erforderlich, wenn:
+        </p>
+
+        <ul>
+            <li>Breite &gt; 3,00 m.</li>
+            <li>Länge &gt; 20,00 m.</li>
+            <li>Achslast &gt; 12.000 kg.</li>
+            <li>Masse &gt; 60.000 kg.</li>
+        </ul>
+
+        <p>
+            Eine Transportbegleitung ist vorgeschrieben, wenn die Masse mehr als 84.000 kg beträgt.
+        </p>
+
+        <h4>Fahrzeiten – Nachgeordnetes Straßennetz</h4>
+
+        <table class="regel-table">
+            <tr><th>Länge</th><th>Breite</th><th>Masse</th><th>Fahrzeiten</th></tr>
+            <tr><td>40,01 – 50,00</td><td>-</td><td>-</td><td>10:00 – 15:00 und 20:00 – 06:00</td></tr>
+            <tr><td>&gt; 50,00</td><td>-</td><td>-</td><td>20:00 – 06:00</td></tr>
+            <tr><td>-</td><td>4,01 – 4,50</td><td>-</td><td>10:00 – 15:00 und 20:00 – 06:00</td></tr>
+            <tr><td>-</td><td>4,51 – 5,00</td><td>-</td><td>20:00 – 06:00</td></tr>
+            <tr><td>-</td><td>&gt; 5,00</td><td>-</td><td>22:00 – 06:00</td></tr>
+            <tr><td>-</td><td>-</td><td>&gt;100.000</td><td>10:00 – 15:00 und 20:00 – 06:00</td></tr>
+        </table>
+
+        <h4>Fahrzeiten – Übergeordnetes Straßennetz</h4>
+
+        <table class="regel-table">
+            <tr><th>Länge</th><th>Breite</th><th>Masse</th><th>Fahrzeiten</th></tr>
+            <tr><td>40,01 – 50,00</td><td>-</td><td>-</td><td>10:00 – 15:00 und 20:00 – 06:00</td></tr>
+            <tr><td>&gt; 50,00</td><td>-</td><td>-</td><td>20:00 – 06:00</td></tr>
+            <tr><td>-</td><td>4,01 – 4,50</td><td>-</td><td>10:00 – 15:00 und 20:00 – 06:00</td></tr>
+            <tr><td>-</td><td>4,51 – 5,00</td><td>-</td><td>20:00 – 06:00</td></tr>
+            <tr><td>-</td><td>&gt; 5,00</td><td>-</td><td>22:00 – 06:00</td></tr>
+            <tr><td>-</td><td>-</td><td>&gt;100.000</td><td>10:00 – 15:00 und 20:00 – 06:00</td></tr>
+        </table>
+
+        <hr>
+
+        <!-- BELGIEN -->
+        <h3><img src="img/flags/be.png"> Belgien – Genehmigungen</h3>
+
+        <p>
+            Eine Genehmigung für unteilbare Ladungen ist erforderlich ab:
+            16,50 x 2,55 x 4,00 x 44.000 kg.
+        </p>
+
+        <p>
+            Motorwagen + Anhänger: 18,75 x 2,55 x 4,00 x 44.000 kg.
+        </p>
+
+        <p>
+            Für ein Einzelfahrzeug ist eine Genehmigung erforderlich, wenn die Gesamtlänge mehr als zwölf Meter beträgt.
+        </p>
+
+        <table class="regel-table">
+            <tr>
+                <th>Genehmigungsart</th>
+                <th>Maximale Abmessungen (LxBxH)</th>
+                <th>Maximale Masse</th>
+                <th>Gültigkeit</th>
+            </tr>
+            <tr><td>Ganz Belgien</td><td>27,00 x 3,50 x 4,00</td><td>44.000 kg.</td><td>5 Jahre</td></tr>
+            <tr><td>Autobahnnetz</td><td>30,00 x 4,25 x 4,30</td><td>44.000 kg.</td><td>1 Jahr</td></tr>
+            <tr><td>Netzwerk 90</td><td>30,00 x 4,25 x 4,50</td><td>90.000 kg.</td><td>1 Jahr</td></tr>
+            <tr><td>Netzwerk 120</td><td>35,00 x 5,00 x 4,80</td><td>120.000 kg.</td><td>4 Monate</td></tr>
+            <tr><td>Reiseweg</td><td>Siehe unten</td><td>Siehe unten</td><td>2 Monate</td></tr>
+        </table>
+
+        <h4>Ganz Belgien</h4>
+
+        <p>
+            Eine Genehmigung für ganz Belgien kann, wie der Name bereits sagt, in ganz Belgien verwendet werden.
+        </p>
+
+        <h4>Autobahnnetze</h4>
+
+        <p>
+            In Belgien dürfen Autobahnen mit einer maximalen Masse von 44.000 kg und einer maximalen Höhe von 4,30 m befahren werden.
+        </p>
+
+        <h4>Netzwerk 90 oder 120</h4>
+
+        <p>
+            In Belgien gibt es Netzwerk-Genehmigungen. Es wurden bestimmte Netzwerkrouten festgelegt,
+            die mit einer Netzwerk-90- oder Netzwerk-120-Genehmigung befahren werden dürfen.
+            Die Routen verlaufen durch ganz Belgien und umfassen beispielsweise die Häfen von Antwerpen und Zeebrugge.
+        </p>
+
+        <h4>Reiseweg</h4>
+
+        <p>
+            Eine Reiseweg-Genehmigung kann beantragt werden, wenn die Transportabmessungen die oben genannten Maße
+            überschreiten oder wenn das endgültige Ziel nicht innerhalb des Netzwerks liegt.
+        </p>
+
+        <h4>Kran-Netzwerk</h4>
+
+        <p>
+            Neben den oben genannten Genehmigungen gibt es in Belgien auch eine Kran-Netzwerk-Genehmigung
+            für den Transport selbstfahrender Arbeitsmaschinen.
+        </p>
+
+        <h4>Begleitung</h4>
+
+        <table class="regel-table">
+            <tr>
+                <th>Länge (m)</th>
+                <th>Breite (m)</th>
+                <th>Höhe (m)</th>
+                <th>Masse (kg)</th>
+                <th>Anzahl der Begleiter</th>
+            </tr>
+            <tr><td>16,50 – 30,00</td><td>2,56 – 3,50</td><td>4,00 – 4,80</td><td>40.000 – 90.000</td><td>Keine</td></tr>
+            <tr><td>30,01 – 35,00</td><td>3,51 – 4,50</td><td></td><td>90.000 – 180.000</td><td>1</td></tr>
+            <tr><td>35,01 – 40,00</td><td>4,51 – 5,00</td><td>&gt; 4,80</td><td>&gt; 180.000</td><td>2</td></tr>
+            <tr><td>&gt; 40,00</td><td>&gt; 5,00</td><td></td><td></td><td>3</td></tr>
+        </table>
+
+        <h4>Fahrverbote</h4>
+
+        <table class="regel-table">
+            <tr><th>Länge (m)</th><th>Breite (m)</th><th>Masse (kg)</th><th>Fahrverbote</th></tr>
+            <tr><td>27,00 – 30,00</td><td></td><td></td><td>07:00 – 09:00 und 16:00 – 18:00</td></tr>
+            <tr><td>&gt; 30,00</td><td></td><td></td><td>06:00 – 21:00</td></tr>
+            <tr>
+                <td></td>
+                <td>3,50 – 4,00</td>
+                <td></td>
+                <td>
+                    06:00 – 21:00, Autobahnen mit weniger als drei Fahrspuren in derselben Richtung.<br>
+                    07:00 – 09:00 und 16:00 – 18:00, sonstige Straßen.
+                </td>
+            </tr>
+            <tr><td></td><td>&gt; 4,00</td><td></td><td>06:00 – 21:00</td></tr>
+            <tr><td></td><td></td><td>60.000</td><td>07:00 – 09:00 und 16:00 – 18:00</td></tr>
+        </table>
+
+        <p>
+            An Tagen vor einem Feiertag ist jeder Schwertransport von 16:00 Uhr bis 24:00 Uhr am Feiertag verboten.
+            Außerdem sind Schwertransporte von Samstag 12:00 Uhr bis Sonntag 24:00 Uhr verboten.
+        </p>
+
+        <p>
+            Bei Schneefall, Regen oder Nebel mit einer Sichtweite von weniger als 200 Metern darf kein Schwertransport fahren.
+            Auch bei Eis oder Schnee auf der Fahrbahn gilt ein Fahrverbot für Schwertransporte.
+        </p>
+
+        <hr>
+
+        <!-- DEUTSCHLAND -->
+        <h3><img src="img/flags/de.png"> Deutschland – Genehmigungen</h3>
+
+        <p>
+            Eine Genehmigung für unteilbare Ladungen ist erforderlich ab:
+            16,50 x 2,55 x 4,00 x 40.000 kg.
+        </p>
+
+        <p>
+            Bei einem Motorwagen mit Anhänger ist eine Genehmigung für unteilbare Ladungen erforderlich ab:
+            18,75 x 2,55 x 4,00 x 40.000 kg.
+        </p>
+
+        <p>
+            Bei Genehmigungen wird in Deutschland zwischen verschiedenen Paragraphen unterschieden.
+        </p>
+
+        <p>
+            Wenn das Fahrzeug die gesetzlich zulässigen Höchstabmessungen einhält, die Ladung jedoch zu lang,
+            zu hoch oder zu breit ist, ist eine Genehmigung nach §46 StVZO
+            (Straßenverkehrs-Zulassungs-Ordnung) erforderlich.
+        </p>
+
+        <p>
+            Wenn ein Fahrzeug die zulässigen Höchstmaße und/oder -gewichte überschreitet,
+            ist sowohl eine Genehmigung nach §70 StVZO als auch eine Genehmigung nach §29 und §46 StVZO erforderlich.
+        </p>
+
+        <p>
+            Ein §70 ist eine Fahrzeugzulassung für Fahrzeuge oder Kombinationen, mit denen die gesetzlichen
+            Höchstabmessungen überschritten werden dürfen. Grundlage für die Erteilung eines §70 ist ein TÜV-Gutachten.
+            In einem TÜV-Gutachten sind die technischen Daten der Fahrzeugkombination enthalten.
+            Ein TÜV-Gutachten wird häufig beim Kauf eines neuen Aufliegers mitgeliefert.
+            Auch NL Exceptioneel kann Sie hierbei unterstützen.
+        </p>
+
+        <p>
+            Auf Grundlage eines §70 kann eine Genehmigung nach §29 beantragt werden.
+            Eine Genehmigung nach §29 ist eine Einzelgenehmigung, die maximal drei Monate gültig ist.
+        </p>
+
+        <p>
+            Der Preis einer deutschen Genehmigung nach §29 wird anhand von sieben verschiedenen Faktoren bestimmt.
+            Nicht alle Faktoren können im Voraus bestimmt werden.
+            Für eine unverbindliche Preisindikation wenden Sie sich bitte an unsere Genehmigungsabteilung.
+        </p>
+
+        <p>
+            Im Bereich der deutschen Genehmigungen arbeiten wir eng mit unserem deutschen Schwesterunternehmen zusammen.
+            Dadurch können wir das innerhalb der NL Exceptioneel Gruppe vorhandene Wissen über das deutsche Straßennetz
+            optimal nutzen. Auch die Zusammenarbeit mit den deutschen Behörden ist von großer Bedeutung.
+        </p>
+
+        <h4>Begleitung</h4>
+
+        <p>
+            In Deutschland gibt es keine einheitlich festgelegten Vorschriften für Transportbegleitungen.
+            Ob und in welcher Form eine Transportbegleitung erforderlich ist, hängt von den Vorgaben in der Genehmigung ab.
+            Diese Vorgaben können je nach Bundesland unterschiedlich sein.
+            Sie hängen von verschiedenen Faktoren ab, beispielsweise von den Abmessungen des Transports oder möglichen Straßenarbeiten.
+        </p>
+
+        <p>
+            In Deutschland gibt es verschiedene Stufen der Transportbegleitung.
+            In einer Genehmigung können BF2, BF3, BF4 oder Hilfepolizei vorgeschrieben werden.
+        </p>
+
+        <p>
+            Unser Schwesterunternehmen in Deutschland verfügt über BF2-, BF3- und BF4-Fahrzeuge und kann zusätzlich
+            HiPo (Hilfepolizei) sowie Polizeibegleitung organisieren.
+            Auch einige niederländische NL Exceptioneel-Begleiter sind dafür ausgebildet,
+            in Deutschland als BF2 oder BF3 zu begleiten.
+        </p>
+
+        <h4>Fahrzeiten</h4>
+
+        <p>
+            In Deutschland werden die Fahrzeiten für Schwertransporte in der Genehmigung vorgeschrieben.
+            Die Fahrzeiten können je nach Bundesland unterschiedlich sein.
+        </p>
+
+        <hr>
+
+        <!-- FRANKREICH -->
+        <h3><img src="img/flags/fr.png"> Frankreich – Genehmigungen</h3>
+
+        <p>
+            Eine Genehmigung für unteilbare Ladungen ist erforderlich ab:
+            16,50 x 2,55 x 4,00 x 44.000 kg.
+        </p>
+
+        <p>
+            Bei einem Motorwagen mit Anhänger ist eine Genehmigung für unteilbare Ladungen erforderlich ab:
+            18,75 x 2,55 x 4,00 x 44.000 kg.
+        </p>
+
+        <p>
+            In Frankreich gibt es mehrere Möglichkeiten im Bereich der Genehmigungen.
+            Nachfolgend finden Sie eine Übersicht über die verschiedenen Genehmigungsarten.
+        </p>
+
+        <table class="regel-table">
+            <tr>
+                <th>Genehmigungsart</th>
+                <th>Maximale Abmessungen (LxBxH)</th>
+                <th>Maximale Masse</th>
+                <th>Gültigkeit</th>
+            </tr>
+            <tr><td>CAT 1</td><td>20,00 x 3,00 x 4,50</td><td>48.000 kg.</td><td>3 Jahre</td></tr>
+            <tr><td>CAT 2</td><td>25,00 x 4,00 x 4,50</td><td>48.000 kg.</td><td>2 Jahre</td></tr>
+            <tr><td>CAT 2 auf bestimmter Route</td><td>25,00 x 4,00 x 4,50</td><td>72.000 kg.</td><td>1 Jahr</td></tr>
+            <tr><td>CAT 3 auf bestimmter Route</td><td>&gt; 25,00 x 4,00 x 4,50</td><td>72.000 kg.</td><td>1 bis 6 Monate</td></tr>
+        </table>
+
+        <p>
+            Für die Standardgenehmigungen CAT 1 und CAT 2 ist eine Routenkarte erforderlich.
+            Auf diesen Karten sind die zum jeweiligen Netzwerk gehörenden Routen aufgeführt.
+            Eine Netzwerkkarte können Sie bei NL Exceptioneel bestellen.
+        </p>
+
+        <p>
+            Neben einer CAT-Genehmigung ist es in Frankreich auch möglich, eine lokale Genehmigung
+            für eine bestimmte Route oder eine sogenannte Anschlussgenehmigung für das CAT-2-Netzwerk zu beantragen.
+        </p>
+
+        <h4>Begleitung</h4>
+
+        <p>
+            Für Frankreich kann hinsichtlich der Begleitung die folgende Übersicht verwendet werden.
+            Wenn ein Feld grau markiert ist und keinen Text enthält, bedeutet dies, dass diese Abmessung nicht zutrifft.
+        </p>
+
+        <table class="regel-table">
+            <tr>
+                <th>Breite (m)</th>
+                <th>Länge (m)</th>
+                <th>CAT 1</th>
+                <th>CAT 2</th>
+                <th>CAT 3 ≤ 72t</th>
+                <th>CAT 3 ≤ 120t</th>
+                <th>CAT 3 &gt; 120t</th>
+            </tr>
+            <tr><td>&lt; 3m00</td><td>&lt; 20m00</td><td>Keine</td><td></td><td>1</td><td>2</td><td></td></tr>
+            <tr><td>&lt; 3m00</td><td>20m01 – 25m00</td><td></td><td>Keine</td><td></td><td></td><td></td></tr>
+            <tr><td>&lt; 3m00</td><td>25m01 – 30m00</td><td></td><td>1</td><td>2</td><td>2 + Guidage</td><td></td></tr>
+            <tr><td>&lt; 3m00</td><td>30m01 – 40m00</td><td>2</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>3m01 – 4m00</td><td>&lt; 25m00</td><td></td><td>1</td><td></td><td>2</td><td>2</td></tr>
+            <tr><td>3m01 – 4m00</td><td>25m01 – 30m00</td><td></td><td>1</td><td>2 + Guidage</td><td></td><td></td></tr>
+            <tr><td>3m01 – 4m00</td><td>30m01 – 40m00</td><td>2</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>4m01 – 4m50</td><td>&lt; 25m00</td><td></td><td>1</td><td>2</td><td>2 + Guidage</td><td></td></tr>
+            <tr><td>4m01 – 4m50</td><td>25m01 – 30m00</td><td>2</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>4m01 – 4m50</td><td>30m01 – 40m00</td><td>2</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>4m51 – 5m00</td><td>&lt; 40m00</td><td></td><td>2</td><td>2 + Guidage</td><td></td><td></td></tr>
+            <tr><td>&gt; 5m00</td><td>&gt; 40m00</td><td></td><td>2 + Guidage</td><td></td><td></td><td></td></tr>
+        </table>
+
+        <h4>Guidage</h4>
+
+        <p>
+            Guidage bezeichnet die Begleitung durch private Begleiter auf gelben Motorrädern.
+            Wenn keine Guideurs verfügbar sind, kann die Polizei den Transport begleiten.
+            Auch aufgrund der Genehmigung kann eine Polizeibegleitung vorgeschrieben werden.
+        </p>
+
+        <h4>Fahrzeiten</h4>
+
+        <p>
+            Die Fahrzeiten können in Frankreich je nach Département und Autobahn unterschiedlich sein.
+            In ganz Frankreich gilt für Schwertransporte ein Fahrverbot von Samstag bzw. dem Tag vor einem Feiertag
+            ab 12:00 Uhr bis Montag bzw. dem Tag nach einem Feiertag um 06:00 Uhr.
+            Bei Schneefall, Glatteis oder schlechter Sicht ist die Fahrt verboten.
+        </p>
+
+        <hr>
+
+        <!-- DÄNEMARK -->
+        <h3><img src="img/flags/dk.png"> Dänemark – Genehmigungen</h3>
+
+        <p>
+            Ob in Dänemark eine Genehmigung erforderlich ist, hängt von den Abmessungen der Ladung
+            und den technischen Möglichkeiten der Kombination ab. Nachfolgend eine Übersicht.
+        </p>
+
+        <table class="regel-table">
+            <tr><th>Kombination</th><th>Genehmigung erforderlich ab</th></tr>
+            <tr><td>Zugmaschine mit Standardanhänger</td><td>16,50 x 3,30 x 4,10 x 40.000 kg</td></tr>
+            <tr><td>Zugmaschine mit Schiebeanhänger ohne Lenkachsen</td><td>22,00 x 3,30 x 4,10 x 40.000 kg.</td></tr>
+            <tr><td>Zugmaschine mit Schiebeanhänger mit Lenkachsen</td><td>30,00 x 3,30 x 4,10 x 40.000 kg.</td></tr>
+            <tr><td>Lkw und Anhänger</td><td>18,75 x 3,30 x 4,10 x 40.000 kg.</td></tr>
+        </table>
+
+        <h4>Begleitung</h4>
+
+        <p>
+            Wenn ein Schwertransport in Dänemark länger als 30 Meter ist, ist eine Transportbegleitung vorgeschrieben.
+            Hinsichtlich der Breite ist eine Transportbegleitung ab 3,65 Metern auf dem nachgeordneten Straßennetz
+            und ab 4,00 Metern auf Autobahnen vorgeschrieben.
+        </p>
+
+        <h4>Fahrverbote</h4>
+
+        <p>
+            Die Fahrverbote in Dänemark unterscheiden sich je nach Region.
+            Für weitere Informationen zu Fahrverboten in Dänemark wenden Sie sich bitte an unsere Genehmigungsabteilung.
+        </p>
+
+        <hr>
+
+        <!-- POLEN -->
+        <h3><img src="img/flags/pl.png"> Polen – Genehmigungen</h3>
+
+        <p>
+            Eine Genehmigung für unteilbare Ladungen ist erforderlich ab:
+            16,50 x 2,55 x 4,00 x 40.000 kg.
+        </p>
+
+        <p>
+            Bei einem Motorwagen mit Anhänger ist eine Genehmigung für unteilbare Ladungen erforderlich ab:
+            18,75 x 2,55 x 4,00 x 40.000 kg.
+        </p>
+
+        <table class="regel-table">
+            <tr>
+                <th>Kategorie</th>
+                <th>Maximale Abmessungen</th>
+                <th>Zulässige Straßen</th>
+                <th>Gültigkeit</th>
+            </tr>
+            <tr><td>I.</td><td>Genehmigte Breite bis 3,50 m</td><td>Alle öffentlichen Straßen</td><td>12 Monate</td></tr>
+            <tr><td>II.</td><td>23,00 x 3,20 x 4,30 x 40.000 kg.</td><td>Alle öffentlichen Straßen</td><td>1, 6, 12 oder 24 Monate</td></tr>
+            <tr><td>III.</td><td>Anhänger ohne Lenkachsen: 23,00 x 3,40 x 4,30 x 40.000 kg.<br>Anhänger mit Lenkachsen: 30,00 x 3,40 x 4,30 x 40.000 kg.</td><td>Nationalstraßen und Autobahnen</td><td>1, 6, 12 oder 24 Monate</td></tr>
+            <tr><td>IV.</td><td>Anhänger ohne Lenkachsen: 23,00 x 4,00 x 4,30 x 60.000 kg.<br>Anhänger mit Lenkachsen: 30,00 x 4,00 x 4,30 x 60.000 kg.</td><td>Alle öffentlichen Straßen</td><td>1, 6, 12 oder 24 Monate</td></tr>
+            <tr><td>V.</td><td>Wenn die oben genannten Grenzen nicht ausreichen.</td><td>Gemäß Genehmigung.</td><td>14 Tage (1 Fahrt) / 30 Tage (mehrere Fahrten)</td></tr>
+        </table>
+
+        <h4>Begleitung</h4>
+
+        <table class="regel-table">
+            <tr><th>Abmessungen (LxBxH)</th><th>Maximale Masse</th><th>Anzahl der Begleiter</th></tr>
+            <tr><td>&gt; 23,00 x 3,20 x 4,50</td><td>60.000 kg.</td><td>1</td></tr>
+            <tr><td>&gt; 30,00 x 3,60 x 4,70</td><td>80.000 kg.</td><td>2</td></tr>
+        </table>
+
+        <hr>
+
+        <!-- ÖSTERREICH -->
+        <h3><img src="img/flags/at.png"> Österreich – Genehmigungen</h3>
+
+        <p>
+            Eine Genehmigung für unteilbare Ladungen ist erforderlich ab:
+            16,50 x 2,55 x 4,00 x 40.000 kg.
+        </p>
+
+        <p>
+            Bei einem Motorwagen mit Anhänger ist eine Genehmigung für unteilbare Ladungen erforderlich ab:
+            18,75 x 2,55 x 4,00 x 40.000 kg.
+        </p>
+
+        <p>
+            Jahresgenehmigung: Die maximalen Abmessungen einer Jahresgenehmigung für Österreich sind:
+            25,00 x 3,50 x 4,20 x 60.000 kg.
+        </p>
+
+        <p>
+            Eine Jahresgenehmigung wird nicht für alle Bundesländer ausgestellt.
+            Für Tirol und Vorarlberg ist ein separater Antrag erforderlich.
+        </p>
+
+        <p>
+            In einer Jahresgenehmigung ist ein Straßennetz enthalten.
+            Die Jahresgenehmigung ist ausschließlich auf den darin aufgeführten Straßen gültig.
+        </p>
+
+        <p>
+            Sollte der Transport nicht innerhalb der hier angegebenen Abmessungen liegen,
+            kontaktieren Sie uns unverbindlich für weitere Informationen über eine Einzelgenehmigung.
+        </p>
+
+        <h4>Begleitung – Stufen</h4>
+
+        <ul>
+            <li>Stufe 1: Der Transport muss von einem Transportbegleiter begleitet werden.</li>
+            <li>Stufe 2: Vereidigter österreichischer Transportbegleiter.</li>
+            <li>Stufe 3: Zwei vereidigte Begleiter.</li>
+            <li>Stufe 4: Drei vereidigte Begleiter + Begleiter gemäß Stufe 1.</li>
+        </ul>
+
+        <hr>
+
+        <!-- TSCHECHIEN -->
+        <h3><img src="img/flags/cz.png"> Tschechien – Genehmigungen</h3>
+
+        <p>
+            Eine Genehmigung für unteilbare Ladungen ist erforderlich ab:
+        </p>
+
+        <ul>
+            <li>16,50 x 2,55 x 4,00 x 42.000 kg mit fünf Achsen.</li>
+            <li>16,50 x 2,55 x 4,00 x 48.000 kg mit sechs Achsen.</li>
+        </ul>
+
+        <p>
+            Bei einem Motorwagen mit Anhänger ist eine Genehmigung für unteilbare Ladungen ab einer Länge
+            von 18,75 Metern in Verbindung mit den oben genannten Abmessungen und Achskonfigurationen erforderlich.
+        </p>
+
+        <p>
+            In Tschechien ist ausschließlich die Beantragung einer Einzelgenehmigung auf Route möglich.
+        </p>
+
+        <h4>Begleitung</h4>
+
+        <table class="regel-table">
+            <tr><th>Abmessungen (LxBxH)</th><th>Maximale Masse</th><th>Anzahl der Begleiter</th></tr>
+            <tr><td>Von 22,00 x 3,20 x 4,50 bis 29,50 x 3,95 x 5,50</td><td>59.999 kg.</td><td>1</td></tr>
+            <tr><td>Von 29,50 x 3,95 x 5,50 bis 39,50 x 3,95 x 5,50</td><td>99.999 kg.</td><td>2</td></tr>
+            <tr><td>&gt; 39,50 x 3,95 x 5,50</td><td>&gt; 100.000 kg.</td><td>3</td></tr>
+        </table>
+
+        <hr>
+
+        <!-- FINNLAND -->
+        <h3><img src="img/flags/fi.png"> Finnland – Genehmigungen</h3>
+
+        <p>
+            Eine Genehmigung für unteilbare Ladungen ist erforderlich ab:
+        </p>
+
+        <p>
+            Für eine Zugmaschine mit Auflieger ist eine Genehmigung erforderlich, wenn folgende Abmessungen überschritten werden:
+            30,00 x 4,00 x 4,40 x 48.000 kg.
+        </p>
+
+        <p>
+            Für einen Lkw mit Anhänger ist eine Genehmigung erforderlich, wenn folgende Abmessungen überschritten werden:
+            25,25 x 4,00 x 4,40 x 60.000 kg.
+        </p>
+
+        <!-- NORWEGEN -->
+        <h3><img src="img/flags/no.png"> Norwegen – Genehmigungen</h3>
+
+        <p>
+            In Norwegen ist eine Genehmigung erforderlich, wenn folgende Abmessungen überschritten werden:
+            <strong>20,00 x 3,25 x 4,50 x 50t.</strong>
+        </p>
+
+        <p>
+            Norwegen kennt keine Dauergenehmigungen.
+            Es werden ausschließlich Routengenehmigungen mit einer Gültigkeit von einem Monat erteilt.
+        </p>
+
+        <h4>Begleitung</h4>
+
+        <p>
+            Ab einer Breite von drei Metern und/oder einer Länge von 23,50 Metern ist in Norwegen mindestens
+            ein Begleiter vorgeschrieben. Die genaue Anzahl der Begleiter ist im Voraus nicht bekannt
+            und wird von den Behörden bei Erteilung der Genehmigung festgelegt.
+        </p>
+
+        <!-- SCHWEDEN -->
+        <h3><img src="img/flags/se.png"> Schweden – Genehmigungen</h3>
+
+        <p>
+            In Schweden ist eine Genehmigung erforderlich, wenn ein Transport breiter als 3,50 Meter
+            oder höher als 4,50 Meter ist. Auch ab einer Länge von mindestens 30 Metern ist eine Genehmigung erforderlich.
+            Ist der Transport länger als 24 Meter und wird zusätzlich mindestens ein weiteres gesetzlich zulässiges Maß
+            überschritten, ist ebenfalls eine Genehmigung erforderlich.
+        </p>
+
+        <p>
+            Beim Gewicht ist eine Genehmigung ab 42.000 kg bzw. 48.000 kg erforderlich.
+            Bei einer fünfachsigen Kombination ist ab 42.000 kg eine Genehmigung erforderlich.
+            Besteht eine Kombination aus sechs oder mehr Achsen, ist ab 48.000 kg eine Genehmigung erforderlich.
+        </p>
+
+        <p>
+            Schweden kennt keine Dauergenehmigungen.
+            Es werden ausschließlich Routengenehmigungen mit einer Gültigkeit von maximal drei Monaten erteilt.
+        </p>
+
+        <h4>Begleitung</h4>
+
+        <p>
+            In Schweden gibt es neben der regulären Transportbegleitung auch eine VTL-Begleitung.
+            VTL steht für Vägtransportledare und kann als Ersatz für die Polizei betrachtet werden.
+            Die folgende Tabelle zeigt, bei welchen Abmessungen eine Begleitung und/oder VTL vorgeschrieben wird.
+        </p>
+
+        <table class="regel-table">
+            <tr>
+                <th></th>
+                <th>&lt; 30,00</th>
+                <th>30,01 – 35,00</th>
+                <th>&gt; 35,00</th>
+            </tr>
+            <tr>
+                <th>3,10 – 3,50</th>
+                <td>1*</td>
+                <td>1</td>
+                <td>1 und 2 VTL</td>
+            </tr>
+            <tr>
+                <th>3,51 – 4,50</th>
+                <td>1</td>
+                <td>2</td>
+                <td>1 und 2 VTL</td>
+            </tr>
+            <tr>
+                <th>&gt; 4,51</th>
+                <td>1 und 2 VTL</td>
+                <td>2 und 2 VTL</td>
+                <td>2 und 2 VTL</td>
+            </tr>
+        </table>
+
+        <p><em>*Nur außerhalb von Autobahnen gültig.</em></p>
+
+        <!-- SCHWEIZ -->
+        <h3><img src="img/flags/ch.png"> Schweiz – Genehmigungen</h3>
+
+        <p>
+            Für eine Zugmaschine mit Auflieger ist eine Genehmigung erforderlich, wenn folgende Abmessungen überschritten werden:
+            16,50 x 2,55 x 4,20 x 40.000 kg.
+        </p>
+
+        <p>
+            Für einen Lkw mit Anhänger ist eine Genehmigung erforderlich, wenn folgende Abmessungen überschritten werden:
+            18,75 x 2,55 x 4,20 x 40.000 kg.
+        </p>
+
+        <p>
+            In der Schweiz wird zwischen zwei Genehmigungsarten unterschieden:
+            einer Jahresgenehmigung und einer Einzelgenehmigung.
+            Die maximalen Abmessungen einer Jahresgenehmigung betragen 30,00 x 3,00 x 4,00 x 40.000 kg.
+        </p>
+
+        <h4>Begleitung</h4>
+
+        <p>
+            In der Schweiz wird zwischen privater Transportbegleitung und ATB-Begleitung unterschieden.
+            Bei einer ATB-Begleitung kann in bestimmten Kantonen eine Polizeibegleitung vorgeschrieben werden.
+        </p>
+
+        <p>
+            Die folgende Tabelle zeigt, wann eine Begleitung vorgeschrieben wird.
+            Die vorgeschriebene Begleitung hängt von der Breite und Länge des Transports ab.
+        </p>
+
+        <table class="regel-table">
+            <tr>
+                <th>Art der Überschreitung</th>
+                <th>Abmessungen einschließlich Ladung</th>
+                <th>Private Begleitung</th>
+                <th>ATB-Begleitung oder Polizeibegleitung</th>
+            </tr>
+            <tr><td>Breite</td><td>3,51 – 3,80</td><td>1</td><td></td></tr>
+            <tr><td>Breite</td><td>&gt; 3,80</td><td></td><td>1</td></tr>
+            <tr><td>Breite + Länge</td><td>&gt; 3,30 in Kombination mit einer Länge &gt; 25,00</td><td>1</td><td></td></tr>
+            <tr><td>Länge</td><td>30,00 – 35,00</td><td>1</td><td></td></tr>
+            <tr><td>Länge</td><td>&gt; 35,00</td><td></td><td>1</td></tr>
+            <tr><td>Länge + Breite</td><td>&gt; 30,00 in Kombination mit einer Breite &gt; 3,60</td><td></td><td>1</td></tr>
+            <tr><td>Überhang vorne</td><td>&gt; 5,00</td><td>1</td><td></td></tr>
+            <tr><td>Überhang hinten</td><td>&gt; 8,00</td><td>1</td><td></td></tr>
+        </table>
+
+    </div>
+</div>
+
+</body>
+</html>

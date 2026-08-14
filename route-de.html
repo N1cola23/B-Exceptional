@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-Exceptional – Streckenanalysen</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .route-wrapper {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .route-text {
+            flex: 1;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .route-image {
+            flex: 1;
+            text-align: right;
+        }
+
+        .route-image img {
+            width: 100%;
+            max-width: 480px;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 900px) {
+            .route-wrapper {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .route-image {
+                text-align: center;
+            }
+
+            .route-image img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="img/logo.png" alt="B-Exceptional Logo">
+
+    <nav>
+        <a href="index-de.html">Startseite</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">Dienstleistungen ▼</button>
+            <div class="dropdown-content">
+                <a href="vergunningen-de.html">Genehmigungen</a>
+                <a href="begeleiding-de.html">Begleitung</a>
+                <a href="route-de.html">Streckenanalyse</a>
+                <a href="vlm-de.html">VLM</a>
+                <a href="signalisatie-de.html">Signalisation</a>
+                <a href="verscheping-de.html">Verschiffung</a>
+            </div>
+        </div>
+
+        <a href="regelgeving-de.html">Regelungen</a>
+        <a href="voorwaarden-de.html">Allgemeine Bedingungen</a>
+        <a href="contact-de.html">Kontakt</a>
+
+        <select class="lang-select" onchange="window.location.href=this.value;">
+            <option value="route.html">NL</option>
+            <option value="route-en.html">EN</option>
+            <option value="route-fr.html">FR</option>
+            <option value="route-de.html" selected>DE</option>
+        </select>
+    </nav>
+</header>
+
+<div class="section">
+    <div class="route-wrapper">
+        <div class="route-text">
+            <h2>Streckenanalysen</h2>
+
+            <p>
+                Bei einer Streckenanalyse untersuchen wir die gesamten Routen, die Ihr Sondertransport zurücklegen muss.
+                Wir überprüfen unter anderem Kurven, Kreisverkehre, Durchfahrtshöhen, Breiten, Brücken, Tunnels und lokale Einschränkungen.
+                Auf Grundlage dieser Analyse stellen wir fest, ob der Transport sicher und gesetzeskonform durchgeführt werden kann.
+            </p>
+
+            <p>
+                Falls erforderlich, bieten wir alternative Routen an, begleiten die Beantragung lokaler Genehmigungen
+                und sorgen für die entsprechende Signalisation und Begleitung.
+            </p>
+        </div>
+
+        <div class="route-image">
+            <img src="img/route.png" alt="Streckenanalyse">
+        </div>
+    </div>
+</div>
+
+<footer class="footer-bar">
+    Rodendijk 60-Y • 2980 Zoersel • Belgien &nbsp;|&nbsp; 
+    Wim De Wree • <a href="mailto:wim@b-exceptional.be">wim@b-exceptional.be</a> • <a href="tel:+32492485247">+32 (0) 492 48 52 47</a>
+    <br>
+    <span class="copyright">© 2026 B-Exceptional – Sondertransporte</span>
+</footer>
+
+</body>
+</html>
